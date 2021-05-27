@@ -1,9 +1,15 @@
 <template>
-  <v-app light>    
+  <v-app light>
     <v-main>
-      <v-container>
         <nuxt />
-      </v-container>
     </v-main>
   </v-app>
 </template>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</style>
