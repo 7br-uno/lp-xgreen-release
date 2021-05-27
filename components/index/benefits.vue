@@ -1,5 +1,23 @@
 <template>
   <section class="wrapper">
+
+    <!-- https://vuetifyjs.com/en/components/grids/ -->
+    <v-row>
+      <v-col cols="12" sm="7" md="6" offset-md="1">
+        <!-- IMG -->
+        <!-- https://vuetifyjs.com/en/components/cards/ -->
+      </v-col>
+      <v-col cols="12" sm="5" md="4">
+        <div
+          v-for="benefit in benefits"
+          :key="benefit"
+          class="border-bot-pers py-3 grey--text text-left"
+        >
+          {{benefit}}
+        </div>
+      </v-col>
+    </v-row>
+
     <div class="conatiner">
       <div class="column-left">
         <h1>Imagem</h1>
@@ -33,6 +51,22 @@
   </section>
 </template>
 
+<script>
+export default {
+  data: () => {
+    return {
+      benefits:[
+        'Ganhe uma renda extra todo mês',
+        'Melhore de vida e de patamar financeiro',
+        'Trabalhe de qualquer lugar. Basta um celular, internet e determinação',
+        'Comece com qualquer valor',
+        'Monte seu proprio horário. Bastam poucos minutos por dia'
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped lang="scss">
   .wrapper {
     background: #131313;
@@ -44,6 +78,13 @@
       justify-content: space-between;
       align-items: center;
       height: 80vh;
+    }
+  }
+
+  .border-bot-pers{
+    border-bottom: 1px dashed lightgrey;
+    &:last-child{
+      border: none;
     }
   }
 </style>
