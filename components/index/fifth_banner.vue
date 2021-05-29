@@ -23,16 +23,16 @@
 .wrapper {
   width: 100%;
   background: #fffd00;
-  padding: 100px;
+  padding: 6.25rem;
   .container{
-    padding: 0px 250px 0px 250px;
+    padding: 0 15.625rem 0 15.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
     h2 {
-      font-size: 40px;
+      font-size: 2.5rem;
       text-transform: uppercase;
       line-height: 1;
       font-weight: 600;
@@ -46,16 +46,34 @@
       justify-content: center;
       align-items: center;
       background-color: #ffff;
-      height: 40px;
-      border-radius: 20px;
-      padding-top: 20px;
-      margin: 20px 0px 20px 0px;
+      height: 2.5rem;
+      border-radius: 1.25rem;
+      padding-top: 1.25rem;
+      margin: 1.25rem 0 1.25rem 0;
 
       p{
         text-transform: uppercase;
         font-weight: 600;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1080px){
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media screen and(max-width: 720px){
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media screen and(max-width: 600px){
+  html {
+    font-size: 75%;
   }
 }
 </style>
