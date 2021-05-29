@@ -1,5 +1,9 @@
 <template>
   <section class="wrapper">
+    <h2>Está na hora de
+      <b class="text-green">realizar seus sonhos</b>
+      aproveite o valor promocional em até:
+    </h2>
     <client-only>
       <vac class="w-100" :end-time="endTime">
         <v-row
@@ -61,10 +65,33 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.font-weight-bold {
+  color: #a7e853;
+  font-size: 80px !important;
+}
+.overline {
+    color: #a7e853;
+    padding-top: 1rem;
+}
 .wrapper {
-  background: #131313;
+  background: url('/img/bg_sonhos.jpg');
   padding: 100px;
   text-align: center;
-  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height:  calc(100vh + 10rem);
+  width: 100%;
+
+  h2{
+    font-size: 30px;
+    line-height: 1.2;
+    color: #ffff;
+    padding: 0 20rem 5rem 20rem;
+    font-weight: 400;
+  }
+  .text-green{
+    color: #a7e853;
+  }
 }
 </style>

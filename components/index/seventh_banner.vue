@@ -16,7 +16,7 @@
 <style scoped lang="scss">
 .wrapper {
   width: 100%;
-  background: #131313;
+  background: url("/img/bg_jigsaw.jpg");
   padding: 100px;
   display: flex;
   justify-content: center;

@@ -1,7 +1,9 @@
 <template>
   <div class="banner">
     <header>
-      <a href="#" class="logo">Xgreen</a>
+      <a href="#" class="logo">
+        <img src="/img/logo_home.png" alt="" />
+      </a>
     </header>
     <div class="content">
       <p>Tenha ganhos</p>
@@ -13,24 +15,26 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background: #0a233f;
+  height: calc(100vh + 10rem);
+  background: url("/img/bg_home.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 200px;
+  padding: 12.5rem;
   .content {
     position: relative;
-    max-width: 750px;
+    max-width: 46.875rem;
     p {
       color: #fff;
-      font-size: 18px;
+      font-size: 1.125rem;
       text-transform: uppercase;
-      line-height: 0.5;
+      line-height: 0.5rem;
     }
     h2 {
       color: #a7e853;
-      font-size: 50px;
+      font-size: 3.125rem;
       text-transform: uppercase;
       line-height: 1.2;
       filter: drop-shadow(-1px -1px 7px #a7e853);
@@ -41,18 +45,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 2.5rem 6.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    .logo {
-      text-decoration: none;
-      font-size: 24px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
   }
 }
 </style>
