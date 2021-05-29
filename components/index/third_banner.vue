@@ -4,7 +4,7 @@
       <h2>Para quem é este curso ?</h2>
       <ul
         v-for="benefit in benefits"
-        :key="benefit"
+        :key="benefit.img"
       >
         <li>
           <img :src="benefit.img" :alt="benefit.text">
