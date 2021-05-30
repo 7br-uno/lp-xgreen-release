@@ -4,6 +4,7 @@
     <benefits />
     <thirdBanner />
     <releaseYourDreams />
+    <releaseYourDreamsContinuation />
     <fifthBanner />
     <sixthBanner />
     <seventhBanner />
@@ -23,6 +24,7 @@ import mainBanner from "/components/index/main_banner";
 import benefits from "/components/index/benefits.vue";
 import thirdBanner from "/components/index/third_banner.vue";
 import releaseYourDreams from "/components/index/releaseYourDreams";
+import releaseYourDreamsContinuation from "/components/index/releaseYourDreamsContinuation";
 import fifthBanner from "/components/index/fifth_banner.vue";
 import sixthBanner from "/components/index/sixth_banner.vue";
 import seventhBanner from "/components/index/seventh_banner.vue";
@@ -41,6 +43,7 @@ export default {
     benefits,
     thirdBanner,
     releaseYourDreams,
+    releaseYourDreamsContinuation,
     fifthBanner,
     sixthBanner,
     seventhBanner,

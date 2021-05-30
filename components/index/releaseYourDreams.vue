@@ -50,6 +50,10 @@
         <span class="w-100" slot="finish">Done!</span>
       </vac>
     </client-only>
+    <div class="container-text-button">
+      <p>A X-Green te ajuda a conquistá-los</p>
+      <button>Comece Agora</button>
+    </div>
   </section>
 </template>
 <script>
@@ -81,8 +85,6 @@ export default {
   background-position: center;
   background-repeat:no-repeat;
   min-height:  calc(100vh + 10rem);
-  width: 100%;
-
   h2{
     font-size: 30px;
     line-height: 1.2;
@@ -92,6 +94,34 @@ export default {
   }
   .text-green{
     color: #a7e853;
+  }
+}
+.container-text-button {
+  min-height: calc(100vh + 10rem);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  p {
+    color: #fff;
+  }
+  button {
+    background: #F71C43;
+    height: 3rem;
+    border: none;
+    width: 16rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    filter: drop-shadow(-1px -1px 7px #F71C43);
+    cursor: pointer;
+     &:hover {
+      background: #c01333;
+      filter: drop-shadow(-1px -1px 7px #c01333);
+
+    }
+
   }
 }
 </style>
