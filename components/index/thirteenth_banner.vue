@@ -1,5 +1,7 @@
 <template>
-  <section class="wrapper"></section>
+  <section class="wrapper">
+
+  </section>
 </template>
 <style scoped lang="scss">
 .wrapper {
