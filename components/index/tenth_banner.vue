@@ -29,12 +29,14 @@
     </div>
     <div class="container-adesao">
       <div class="border-green">
-
+        <h2>São mais de R$ 7 mil em bônus + acesso à metodologia exclusiva fast green</h2>
+        <p>E você não vai pagar por nenhum deles!</p>
       </div>
       <div class="background-pink">
-
+        <h2> <span class="text-white">E vamos além,</span> vamos te dar <span class="text-black">R$ 3.000,00</span>  de desconto no curso <b class="text-brackground">Até dia 25/04</b> </h2>
       </div>
     </div>
+    <button class="btn-adesao"> + Adesão zero</button>
   </section>
 </template>
 
@@ -139,6 +141,21 @@ export default {
   border-right: 4px solid #A6FF3F;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2 {
+    color: #A6FF3F;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0rem  20rem 0 20rem;
+  }
+  p {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
 }
 .background-pink {
   width: 100%;
@@ -146,6 +163,44 @@ export default {
   background:#F71C43;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0rem  20rem 0 20rem;
+    font-weight: 400;
+  }
+  .text-white {
+    color: #ffffff;
+  }
+  .text-black {
+    color: #111111;
+    font-weight: 600;
+  }
+  .text-brackground {
+    background-color: #ffffff;
+  }
+}
+
+.btn-adesao {
+  margin-top: -30rem;
+  height: 3rem;
+  width: 20rem;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #F71C43;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #e9e3e3;
+  }
 }
 
 </style>
