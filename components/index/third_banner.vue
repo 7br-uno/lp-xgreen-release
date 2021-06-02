@@ -38,8 +38,7 @@ export default {
   display: flex;
   justify-content: center;
   .container {
-    width: 50%;
-    padding: 0 2rem;
+     width: 50%;
     border: 3px solid #ffff;
     h2{
       text-align: center;
@@ -59,7 +58,7 @@ export default {
       li{
         list-style: none;
         display: flex;
-        padding-bottom: 2rem;
+        padding-bottom: 32px;
         align-items: center;
         img{
           margin-right: 2rem;
@@ -71,6 +70,15 @@ export default {
         }
       }
     }
+  }
+}
+
+@media(max-width: 991px) {
+  .wrapper {
+    padding: 20px 50px;
+  }
+  .container {
+    width: 100% !important;
   }
 }
 </style>

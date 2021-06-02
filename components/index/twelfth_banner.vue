@@ -82,9 +82,7 @@ export default {
   text-transform: uppercase;
   color: #ffffff;
 }
-.active {
-  color: #292876 !important;
-}
+
 
 .panel-description {
   color: #ffffff;
