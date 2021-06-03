@@ -1,64 +1,78 @@
 <template>
   <section class="wrapper">
     <div class="title-bonus mx-auto mb-15">
-      <h2>Bônus!</h2>
+      <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'">Bônus!</h2>
       <p>
         E garantindo a sua vaga no
         <b>período promocional você ganha mais 8 bônus:</b>
       </p>
     </div>
-    <v-row>
+    <v-row class="mb-10">
       <v-col
         cols="12"
         sm="6"
         md="3"
         v-for="cardBonus in cardsBonus"
         :key="cardBonus.titulo"
-        class="list-cards"
+        class="list-cards d-flex"
       >
-        <div
-          class="container-bonus"
-          :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
-        >
-          <span></span>
-          <h2>
-            {{ cardBonus.titulo }}
-          </h2>
-        </div>
-        <div class="container-p">
-          <p class="p-green">{{ cardBonus.precoDe }} |</p>
-          <p class="p-red">
-            {{ cardBonus.precoPor }}
+        <div class="mx-auto">
+          <div
+            class="container-bonus"
+            :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
+          >
+            <span></span>
+            <h2>
+              {{ cardBonus.titulo }}
+            </h2>
+          </div>
+          <div class="container-p">
+            <p class="p-green">{{ cardBonus.precoDe }} |</p>
+            <p class="p-red">
+              {{ cardBonus.precoPor }}
+            </p>
+          </div>
+          <p class="p-desc">
+            {{ cardBonus.description }}
           </p>
         </div>
-        <p class="p-desc">
-          {{ cardBonus.description }}
-        </p>
       </v-col>
     </v-row>
-    <div class="container-adesao">
-      <div class="border-green">
-        <div class="c-text-div">
-          <div class="h2-c-green text-lg-h5 text-sm-body-2">
-            São mais de R$ 7 mil em bônus + acesso à metodologia exclusiva fast
-            green
-          </div>
-          <div class="p-c-green text-lg-h5 text-sm-body-2">
-            E você não vai pagar por nenhum deles!
-          </div>
-        </div>
-      </div>
-      <div class="background-pink">
-        <div class="c-text-div">
-          <div class="text-lg-h5 text-md-body-2 text-bp">
-            <span class="text-white">E vamos além,</span> vamos te dar
-            <span class="text-black">R$ 3.000,00</span> de desconto no curso
-            <b class="text-brackground">Até dia 25/04</b>
+    <v-container>
+      <div class="container-adesao">
+        <div class="border-green">
+          <div class="c-text-div pa-3">
+            <div class="h2-c-green text-uppercase">
+              <div :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold">
+                São mais de R$ 7 mil em bônus,
+              </div>
+              <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : 'subtitle-1'" class="font-weight-medium">
+                + acesso à metodologia exclusiva fast green ®
+              </div>
+            </div>
+            <div class="p-c-green text-lg-h5 text-sm-body-2">
+              E você não vai pagar por nenhum deles!
+            </div>
           </div>
         </div>
+        <div class="background-pink py-12">
+          <div class="c-text-div">
+            <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''" class="text-lg-h5 text-bp">
+              <span class="text-white">E vamos além,</span> vamos te dar
+              <span class="text-black">R$ 3.000,00</span> de desconto no curso
+              <b class="text-brackground">Até dia 25/04</b>
+            </div>
+          </div>
+        </div>
+        <v-btn
+          x-large
+          color="white"
+          class="pink--text btn-pers"
+        >
+          <b>+ Adesão zero</b>
+        </v-btn>
       </div>
-    </div>
-    <button class="btn-adesao">+ Adesão zero</button>
+    </v-container>
     <!-- ========================================================= -->
     <!-- <section class="container-cards">
       <div class="c-adesao">
@@ -179,6 +193,11 @@ export default {
 
 
 <style scoped lang="scss">
+@media(max-width: 991px) {
+  .wrapper {
+    padding: 70px 20px !important;
+  }
+}
 .wrapper {
   background: #111111;
   padding: 100px;
@@ -230,15 +249,22 @@ export default {
   }
 }
 
+.btn-pers{
+  border-radius: 30px;
+  margin-top: -25px;
+  width: 220px;
+}
+
 /* ========================== */
 
 /* ==============Container pink & green ==================== */
 .container-adesao {
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .c-text-div {
-  max-width: 750px;
-  margin: 0 auto;
+  width: 100%;
 }
 .border-green {
   width: 100%;
@@ -264,7 +290,7 @@ export default {
 }
 .background-pink {
   width: 100%;
-  height: 160px;
+  padding: 20px;
   background: #f71c43;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -275,6 +301,8 @@ export default {
   text-align: center;
   .text-bp {
     text-transform: uppercase;
+    max-width: 680px;
+    margin: 0 auto;
   }
   .text-white {
     color: #ffffff;
@@ -282,6 +310,7 @@ export default {
   .text-black {
     color: #111111;
     font-weight: 600;
+    white-space: nowrap;
   }
   .text-brackground {
     background-color: #ffffff;
