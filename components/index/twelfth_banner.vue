@@ -2,7 +2,6 @@
   <section class="wrapper">
     <h1>Perguntas frequentes</h1>
     <v-expansion-panels
-      v-model="panel"
       multiple
       v-for="(question, i) in questions"
       :key="i"

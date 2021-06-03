@@ -13,7 +13,7 @@
         sm="6"
         md="3"
         v-for="cardBonus in cardsBonus"
-        :key="cardBonus.titulo"
+        :key="cardBonus.img"
         class="list-cards d-flex"
       >
         <div class="mx-auto">
