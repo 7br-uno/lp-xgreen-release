@@ -60,13 +60,13 @@ export default {
 
 @media (max-width: 991px) {
   .wrapper {
-    padding: 50px 50px;
+    padding: 50px 0px;
     h1 {
       font-size: 36px;
     }
   }
   .img-chat {
-  width: 200px;
+  width: 150px;
   margin-right: 4px;
 }
 }

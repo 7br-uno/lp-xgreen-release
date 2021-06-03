@@ -48,37 +48,31 @@
       </div>
     </div>
     <button class="btn-adesao">+ Adesão zero</button>
-<!-- ========================================================= -->
-    <section class="container-card-adesao">
-      <div class="adesao-green">
-        <h4>Adesão: R$ 399</h4>
-      </div>
-      <div class="container-card-grey">
-        <div class="container-border">
-            <div>
-             <h2 class="h2-mensal">Mensal</h2>
-              <h1>299,</h1>
-            </div>
-            <div>
-            <h2>00</h2>
-            </div>
+    <!-- ========================================================= -->
+    <section class="container-cards">
+      <div class="c-adesao">
+        <div class="c-green">
+          <h4>Adesão: R$ 399</h4>
+        </div>
+        <div class="c-grey">
+          <div class="c-border">
+            <h2 class="h2-mensal">Mensal</h2>
+            <h1 class="h1-green">299,00</h1>
           </div>
-         </div>
-      <div>
-        <ul>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-          <li>Curso completo</li>
-        </ul>
-      </div>
-      <div>
-        <button>Quero começar</button>
+        </div>
+        <div class="c-list-desc">
+          <ul class="desc-card">
+            <li  v-for="(listItem1, i) in listItems1" :key="i">
+              <v-icon small color="grey darken-2">
+                mdi-check-bold
+              </v-icon>
+              {{listItem1.desc}}
+            </li>
+          </ul>
+
+           <button>Quero começar</button>
+
+        </div>
       </div>
     </section>
   </section>
@@ -153,6 +147,22 @@ export default {
           description:
             "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
         },
+      ],
+      items: [
+        { text: "Real-Time", icon: "mdi-clock" },
+        { text: "Audience", icon: "mdi-account" },
+        { text: "Conversions", icon: "mdi-flag" },
+      ],
+
+      listItems1: [
+        {desc: "Curso completo"},
+        {desc: "Acesso às entradas"},
+        {desc: "Grupo Vip no Telegram"},
+        {desc: "Planilha de gestão de bancas"},
+        {desc: "Acesso a novos mercados"},
+        {desc: "Consultoria Six Capital"},
+        {desc: "8 bônus exclusivos"},
+        {desc: "Suporte on-line"},
       ],
     };
   },
@@ -305,52 +315,87 @@ export default {
 /* =========================== */
 /* ===========Card adesão ================ */
 
-.container-card-adesao{
-  width: 250px;
-  height: 400px;
-  background: #f3f3f3;
-  border-radius: 6px;
+.c-adesao {
+  width: 260px;
+  height: 460px;
 }
 
-.adesao-green {
+.c-green {
   width: 100%;
   height: 12%;
+  background: #a6ff3f;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background: #a6ff3f;
-
+   border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-decoration: line-through;
 }
 
-.container-card-grey{
+.c-grey {
   width: 100%;
-  height: 40%;
+  height: 26%;
   background: #919191;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 4px;
+  .c-border {
+    width: 80%;
+    height: 70%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h2-mensal {
+    background-color: #919191;
+    position: relative;
+    top: -8px;
+  }
+  .h1-green {
+    color: #a6ff3f;
+    font-size: 50px;
+  }
 }
-.container-border {
-  width: 80%;
-  height: 80%;
+.c-list-desc {
+  background: #f2f2f2;
+  width: 100%;
+  height: 68%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border: solid 3px;
-  margin-top: 1rem;
-
-  .h2-mensal{
-      background-color: #919191;
+  padding-left: 2px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  li {
+    list-style: none;
   }
-    h1 {
+  ul {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    padding-bottom: 30px;
+    :first-child {
       color: #a6ff3f;
-      font-size: 4rem;
-      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
     }
+  }
 }
 
-
-
+button {
+  width: 80%;
+  background: #a6ff3f;
+  color: #ffffff;
+  height: 14%;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 </style>
