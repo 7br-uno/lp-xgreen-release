@@ -2,7 +2,7 @@
   <div class="banner">
     <header>
       <a href="#" class="logo">
-        <img src="/img/logo_home.png" alt="" />
+        <img src="/img/logo_home.png" alt="X-GREEN" />
       </a>
     </header>
     <img class="img-bg" src="/img/bg_home.jpg" alt="">
@@ -31,8 +31,7 @@
   }
   .logo {
     img {
-      width: 60px;
-      height: 25px;
+      width: 200px;
     }
   }
 }

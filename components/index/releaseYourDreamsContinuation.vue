@@ -1,33 +1,32 @@
 <template>
-  <section class="wrapper">
-    <h2 class="text-title">Tudo que você vê no mercado em um curso só</h2>
-    <div class="courses-container">
-      <div class="courses-container-cards">
-        <div class="card-md">
-          <h2>Aprenda de um jeito fácil.</h2>
-          <p>Do basico ao avancçado:</p>
-        </div>
-        <button>Comece agora</button>
-      </div>
-      <ul class="courses-container-cards">
-        <li
-        class="card"
-          v-for="course1 in courses1"
-          :key="course1"
-        >
-          <p>{{ course1 }}</p>
-        </li>
-      </ul>
-      <ul class="courses-container-cards">
-        <li
-        class="card"
-          v-for="course2 in courses2"
-          :key="course2"
-        >
-          <p>{{ course2 }}</p>
-        </li>
-      </ul>
-    </div>
+  <section class="wrapper pb-16">
+    <h2 class="text-title mx-auto">Tudo que você vê no mercado em um curso só</h2>
+    <v-row class="mx-8 mt-10">
+      <v-col cols="12" sm="12" md="3">
+        <v-card color="grey darken-4" class="white--text rounded-xl pa-10">
+          <h2 class="display-1 font-weight-bold text-uppercase text-left">Aprenda de um jeito fácil.</h2>
+          <p class="subtitle-1 text-uppercase text-left">Do basico ao avançado:</p>
+        </v-card>
+        <v-card color="pink" class="white--text rounded-xl pa-10 mt-3">
+          <h2 class="body-2 text-uppercase text-center font-weight-bold">Comece agora</h2>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="4" md="3">
+        <v-card color="grey darken-3" v-for="course1 in courses1" :key="course1" class="white--text rounded-xl pa-7 mb-3">
+          <p class="body-2 text-uppercase text-center mb-0 font-weight-bold">{{ course1 }}</p>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="4" md="3">
+        <v-card color="grey darken-3" v-for="course2 in courses2" :key="course2" class="white--text rounded-xl pa-7 mb-3">
+          <p class="body-2 text-uppercase text-center mb-0 font-weight-bold">{{ course2 }}</p>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="4" md="3">
+        <v-card color="grey darken-3" v-for="course3 in courses3" :key="course3" class="white--text rounded-xl pa-7 mb-3">
+          <p class="body-2 text-uppercase text-center mb-0 font-weight-bold">{{ course3 }}</p>
+        </v-card>
+      </v-col>
+    </v-row>
   </section>
 </template>
 
@@ -47,6 +46,12 @@ export default {
         "Conceitos: ODDs, ROI, Punter, Trader, etc",
         "Grupo Vip do Telegram com entradas para copiar",
       ],
+      courses3: [
+        "Principais mercados: resultado correto, gols, escanteios, entre outros",
+        "Planejamento financeiro/juros compostos",
+        "Conceitos: ODDs, ROI, Punter, Trader, etc",
+        "Grupo Vip do Telegram com entradas para copiar",
+      ]
     };
   },
 };
@@ -61,7 +66,7 @@ export default {
     font-size: 40px;
     line-height: 1.2;
     color: #ffff;
-    padding: 0 30rem 0rem 30rem;
+    max-width: 550px;
     font-weight: 600;
   }
   .courses-container {

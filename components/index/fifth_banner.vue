@@ -1,11 +1,27 @@
 <template>
   <section class="wrapper">
     <div class="container">
-      <h2>Você acha que está muito bom para ser verdade?</h2>
-      <div class="container-attention">
-        <p>Então preste atenção</p>
-      </div>
-      <p>
+      <h2 :class="$vuetify.breakpoint.smAndUp ? 'display-2' : 'headline'">Você acha que está muito bom para ser verdade?</h2>
+      <v-chip
+        :large="$vuetify.breakpoint.smAndUp"
+        class="ma-5"
+        color="white font-weight-bold text-uppercase"
+      >
+        <v-icon
+          class="pr-4"
+          :large="$vuetify.breakpoint.smAndUp"
+        >
+          mdi-information-outline mdi-rotate-180
+        </v-icon>
+        Então preste atenção
+        <v-icon
+          class="pl-4"
+          :large="$vuetify.breakpoint.smAndUp"
+        >
+          mdi-information-outline mdi-rotate-180
+        </v-icon>
+      </v-chip>
+      <p class="mb-0">
         Desde 2018, a X-green conseguiu
         <b>
           lucro em mais de 95% dos dias.
@@ -20,25 +36,28 @@
   </section>
 </template>
 <style scoped lang="scss">
+@media(max-width: 991px) {
+  .wrapper {
+    padding: 30px 20px !important;
+  }
+}
 .wrapper {
   width: 100%;
   background: #fffd00;
   padding: 6.25rem;
   .container{
-    padding: 0 15.625rem 0 15.625rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
     h2 {
-      font-size: 2.5rem;
       text-transform: uppercase;
       line-height: 1;
       font-weight: 600;
     }
     p {
-      line-height: 0.5;
     }
     .container-attention {
       width: 50%;

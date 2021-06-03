@@ -72,7 +72,7 @@ export default {
 
 @media(max-width: 991px) {
   .wrapper {
-    padding: 20px 50px;
+    padding: 75px 50px;
   }
   .container {
     width: 100% !important;

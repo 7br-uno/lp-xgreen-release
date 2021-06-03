@@ -40,7 +40,7 @@
           {{benefit}}
         </div>
         <v-btn
-          class="mt-2"
+          class="my-15 my-sm-3 "
           color="pink"
           elevation="2"
           dark
@@ -72,7 +72,7 @@ export default {
 <style scoped lang="scss">
   .wrapper {
     background: #131313;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     .conatiner{
       width: 100%;
@@ -122,5 +122,10 @@ export default {
     margin-bottom: -20px;
     position: relative;
     z-index: 2;
+  }
+  @media(max-width: 991px) {
+    .wrapper {
+      padding: 30px;
+    }
   }
 </style>

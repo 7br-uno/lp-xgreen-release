@@ -1,39 +1,54 @@
 <template>
-  <section class="wrapper">
-    <h2>E mais: Temos o Robozão absurdamente bom!</h2>
+  <section class="wrapper pt-16">
+    <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'" class="mt-10 mx-auto">E mais: Temos o Robozão absurdamente bom!</h2>
     <p class="text-green">(E que não foi barato)</p>
     <div class="container">
-      <div class="robozao_strategist">
-        <div>
-          <img src="/img/icone_robozao_televisao_01.png" alt="" />
-          <p>
-            Uma inteligência artificial, apelidada de Robozão, indicada as
-            nelhores entradas e jogos da nossa estratégia vencedora desde 2018
-          </p>
-        </div>
-      </div>
-      <div class="robozao_strategist">
-        <div>
-          <img src="/img/icone_robozao_uniao_02.png" alt="" />
-          <p>
-            Uma inteligência artificial, apelidada de Robozão, indicada as
-            nelhores entradas e jogos da nossa estratégia vencedora desde 2018
-          </p>
-        </div>
-      </div>
-      <div class="robozao_strategist">
-        <div>
-          <img src="/img/icone_robozao_bola_03.png" alt="" />
-          <p>
-            Uma inteligência artificial, apelidada de Robozão, indicada as
-            nelhores entradas e jogos da nossa estratégia vencedora desde 2018
-          </p>
-        </div>
-      </div>
+
+
+      <v-row>
+        <v-col cols="12" md="6" lg="4">
+          <div class="robozao_strategist mx-auto">
+            <div>
+              <img src="/img/icone_robozao_televisao_01.png" alt="" />
+              <p>
+                Uma inteligência artificial, apelidada de Robozão, indicada as
+                nelhores entradas e jogos da nossa estratégia vencedora desde 2018
+              </p>
+            </div>
+          </div>
+        </v-col>
+        <v-col cols="12" md="6" lg="4">
+          <div class="robozao_strategist mx-auto">
+            <div>
+              <img src="/img/icone_robozao_uniao_02.png" alt="" />
+              <p>
+                Uma inteligência artificial, apelidada de Robozão, indicada as
+                nelhores entradas e jogos da nossa estratégia vencedora desde 2018
+              </p>
+            </div>
+          </div>
+        </v-col>
+        <v-col cols="12" md="12" lg="4">
+          <div class="robozao_strategist mx-auto">
+            <div>
+              <img src="/img/icone_robozao_bola_03.png" alt="" />
+              <p>
+                Uma inteligência artificial, apelidada de Robozão, indicada as
+                nelhores entradas e jogos da nossa estratégia vencedora desde 2018
+              </p>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
     </div>
   </section>
 </template>
 <style scoped lang="scss">
+@media(max-width: 991px) {
+  .wrapper {
+    padding: 30px 20px !important;
+  }
+}
 .wrapper {
   background: #191919;
   padding: 50px;
@@ -43,14 +58,13 @@
     font-size: 2.5rem;
     text-transform: uppercase;
     line-height: 1;
-    padding: 0 15.625rem 0 15.625rem;
+    max-width: 600px;
   }
   .text-green {
     color: #a7e853;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 2;
-    padding: 0 15.625rem 0 15.625rem;
   }
   .container {
     width: 100%;
@@ -61,12 +75,7 @@
     margin-top: 60px;
 
     .robozao_strategist {
-      position: relative;
       width: 350px;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       img {
         max-width: 100px;
         padding-bottom: 1rem;

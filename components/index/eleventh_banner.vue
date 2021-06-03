@@ -1,22 +1,25 @@
 <template>
-  <section class="wrapper">
-    <div class="teste-sete">
-      <h2>Teste grátis</h2>
-      <p>Ainda está achando que é muito bom pra ser verdade?</p>
-      <div class="img-teste">
-      <img src="/img/selo_setedias.png" alt="sete dias">
-      </div>
-    </div>
-    <div class="teste-gratis">
-      <p>Então <b>teste o nosso produto gratis por sete dias.</b>
-      Aproveite este periodo e confirme o nosso rendimento e tudo o que estamos afirmando aqui!
-      </p>
-      <p>Se não quiser continuar, cancelamos a sua inscrição sem qualquer enrolação.</p>
-      <p>É só entrar na plataforma de contratação do curso e solicitar o cancelamento.</p>
+  <div class="wrapper py-16">
+    <v-container>
+      <v-row>
+        <v-col cols="12" offset-sm="5" sm="6" class="px-8 px-sm-0">
+          <div class="teste-gratis">
+            <h2 :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold white--text mb-5">Sua experiência vai ser matadora!!!</h2>
+            <p>Então <b>teste o nosso produto gratis por sete dias.</b>
+              Aproveite este periodo e confirme o nosso rendimento e tudo o que estamos afirmando aqui!
+            </p>
+            <p>Se não quiser continuar, cancelamos a sua inscrição sem qualquer enrolação.</p>
+            <p>É só entrar na plataforma de contratação do curso e solicitar o cancelamento.</p>
 
-      <button>Faça o teste grátis por 7 dias</button>
-    </div>
-  </section>
+            <button>Faça o teste grátis por 7 dias</button>
+          </div>
+        </v-col>
+        <v-col sm="1">
+          <img style="margin-left: -80%; margin-top: -80%;" src="/img/selo_setedias.png" alt="sete dias">
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 <style scoped lang="scss">
 .wrapper {
@@ -24,17 +27,7 @@
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  padding: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
   .teste-sete {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     .img-teste {
       width: 100%;
       display: flex;
@@ -55,7 +48,6 @@
 
   }
   .teste-gratis{
-    width: 40%;
     p{
       text-align: initial;
       color: #ffff;
