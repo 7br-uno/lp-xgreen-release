@@ -62,7 +62,7 @@
               <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''" class="text-lg-h5 text-bp">
                 <span class="text-white">E vamos além,</span> vamos te dar
                 <span class="text-black">R$ 3.000,00</span> de desconto no curso
-                <b class="text-brackground">Até dia 25/04</b>
+                <b class="text-brackground px-2">Até dia 25/04</b>
               </div>
             </div>
           </div>
