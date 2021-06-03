@@ -8,53 +8,59 @@
       </p>
     </div>
     <v-row>
-      <v-col cols="12" sm="6" md="3" v-for="cardBonus in cardsBonus" :key="cardBonus.titulo">
-        <span class="text-xl-h4 text-sm-body-2">TESTE</span>
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+        v-for="cardBonus in cardsBonus"
+        :key="cardBonus.titulo"
+        class="list-cards"
+      >
+        <div
+          class="container-bonus"
+          :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
+        >
+          <span></span>
+          <h2>
+            {{ cardBonus.titulo }}
+          </h2>
+        </div>
+        <div class="container-p">
+          <p class="p-green">{{ cardBonus.precoDe }} |</p>
+          <p class="p-red">
+            {{ cardBonus.precoPor }}
+          </p>
+        </div>
+        <p class="p-desc">
+          {{ cardBonus.description }}
+        </p>
       </v-col>
     </v-row>
-    <div class="container-cards-bonus">
-      <ul class="list-cards">
-        <li v-for="cardBonus in cardsBonus" :key="cardBonus.titulo">
-          <div
-            class="container-bonus"
-            :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
-          >
-            <span></span>
-            <h2>
-              {{ cardBonus.titulo }}
-            </h2>
-          </div>
-          <div class="container-p">
-            <p class="p-green">{{ cardBonus.precoDe }} |</p>
-            <p class="p-red">
-              {{ cardBonus.precoPor }}
-            </p>
-          </div>
-          <p>
-            {{ cardBonus.description }}
-          </p>
-        </li>
-      </ul>
-    </div>
     <div class="container-adesao">
       <div class="border-green">
-        <h2>
-          São mais de R$ 7 mil em bônus + acesso à metodologia exclusiva fast
-          green
-        </h2>
-        <p>E você não vai pagar por nenhum deles!</p>
+        <div class="c-text-div">
+          <div class="h2-c-green text-lg-h5 text-sm-body-2">
+            São mais de R$ 7 mil em bônus + acesso à metodologia exclusiva fast
+            green
+          </div>
+          <div class="p-c-green text-lg-h5 text-sm-body-2">
+            E você não vai pagar por nenhum deles!
+          </div>
+        </div>
       </div>
       <div class="background-pink">
-        <h2>
-          <span class="text-white">E vamos além,</span> vamos te dar
-          <span class="text-black">R$ 3.000,00</span> de desconto no curso
-          <b class="text-brackground">Até dia 25/04</b>
-        </h2>
+        <div class="c-text-div">
+          <div class="text-lg-h5 text-md-body-2 text-bp">
+            <span class="text-white">E vamos além,</span> vamos te dar
+            <span class="text-black">R$ 3.000,00</span> de desconto no curso
+            <b class="text-brackground">Até dia 25/04</b>
+          </div>
+        </div>
       </div>
     </div>
     <button class="btn-adesao">+ Adesão zero</button>
     <!-- ========================================================= -->
-    <section class="container-cards">
+    <!-- <section class="container-cards">
       <div class="c-adesao">
         <div class="c-green">
           <h4>Adesão: R$ 399</h4>
@@ -67,19 +73,16 @@
         </div>
         <div class="c-list-desc">
           <ul class="desc-card">
-            <li  v-for="(listItem1, i) in listItems1" :key="i">
-              <v-icon small color="grey darken-2">
-                mdi-check-bold
-              </v-icon>
-              {{listItem1.desc}}
+            <li v-for="(listItem1, i) in listItems1" :key="i">
+              <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
+              {{ listItem1.desc }}
             </li>
           </ul>
 
-           <button>Quero começar</button>
-
+          <button>Quero começar</button>
         </div>
       </div>
-    </section>
+    </section> -->
   </section>
 </template>
 
@@ -160,14 +163,14 @@ export default {
       ],
 
       listItems1: [
-        {desc: "Curso completo"},
-        {desc: "Acesso às entradas"},
-        {desc: "Grupo Vip no Telegram"},
-        {desc: "Planilha de gestão de bancas"},
-        {desc: "Acesso a novos mercados"},
-        {desc: "Consultoria Six Capital"},
-        {desc: "8 bônus exclusivos"},
-        {desc: "Suporte on-line"},
+        { desc: "Curso completo" },
+        { desc: "Acesso às entradas" },
+        { desc: "Grupo Vip no Telegram" },
+        { desc: "Planilha de gestão de bancas" },
+        { desc: "Acesso a novos mercados" },
+        { desc: "Consultoria Six Capital" },
+        { desc: "8 bônus exclusivos" },
+        { desc: "Suporte on-line" },
       ],
     };
   },
@@ -196,59 +199,50 @@ export default {
   }
 }
 
-.container-cards-bonus {
-  width: 100%;
+/* ================ 8 Cards ========================== */
+
+.container-bonus {
+  min-width: 200px;
+  min-height: 300px;
+  max-width: 200px;
+  max-height: 300px;
+  border: 8px solid #606060;
+  border-radius: 4px;
   display: flex;
-  .list-cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    li {
-      margin-left: 0 !important;
-      width: 25%;
-      height: 40rem;
-      list-style: none;
-      height: x;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      p {
-        text-align: initial;
-        color: #ffffff;
-      }
-      .container-p {
-        display: flex;
-        .p-green {
-          color: chartreuse;
-        }
-        .p-red {
-          color: crimson;
-        }
-      }
-      .container-bonus {
-        width: 80%;
-        height: 50%;
-        border: 8px solid #606060;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        h2 {
-          color: #ffffff;
-        }
-      }
-    }
+  align-items: center;
+  h2 {
+    color: #ffffff;
+  }
+}
+.p-desc {
+  text-align: initial;
+  color: #ffffff;
+  max-width: 200px;
+}
+.container-p {
+  display: flex;
+  .p-green {
+    color: chartreuse;
+    text-decoration: line-through;
+  }
+  .p-red {
+    color: crimson;
   }
 }
 
+/* ========================== */
+
+/* ==============Container pink & green ==================== */
 .container-adesao {
   width: 100%;
 }
-
+.c-text-div {
+  max-width: 750px;
+  margin: 0 auto;
+}
 .border-green {
   width: 100%;
-  height: 10rem;
+  height: 160px;
   border-top: 4px solid #a6ff3f;
   border-left: 4px solid #a6ff3f;
   border-right: 4px solid #a6ff3f;
@@ -259,20 +253,18 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  h2 {
+
+  .h2-c-green {
     color: #a6ff3f;
-    font-size: 1.6rem;
     text-transform: uppercase;
-    padding: 0rem 20rem 0 20rem;
   }
-  p {
+  .p-c-green {
     color: #ffffff;
-    font-size: 1.2rem;
   }
 }
 .background-pink {
   width: 100%;
-  height: 10rem;
+  height: 160px;
   background: #f71c43;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -281,11 +273,8 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  h2 {
-    font-size: 1.6rem;
+  .text-bp {
     text-transform: uppercase;
-    padding: 0rem 20rem 0 20rem;
-    font-weight: 400;
   }
   .text-white {
     color: #ffffff;
@@ -300,15 +289,15 @@ export default {
 }
 
 .btn-adesao {
-  margin-top: -30rem;
-  height: 3rem;
-  width: 20rem;
+  margin-top: -480px;
+  height: 48px;
+  width: 320px;
   border: none;
   border-radius: 20px;
   text-align: center;
   background-color: #ffffff;
   color: #f71c43;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   &:hover {
@@ -316,7 +305,16 @@ export default {
   }
 }
 
+@media (max-width: 900px) {
+  .btn-adesao {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+}
 /* =========================== */
+
 /* ===========Card adesão ================ */
 
 .c-adesao {
@@ -331,7 +329,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-   border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   text-decoration: line-through;
 }
