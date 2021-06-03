@@ -1,102 +1,105 @@
 <template>
   <section class="wrapper">
-    <div class="title-bonus mx-auto mb-15">
-      <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'">Bônus!</h2>
-      <p>
-        E garantindo a sua vaga no
-        <b>período promocional você ganha mais 8 bônus:</b>
-      </p>
-    </div>
-    <v-row class="mb-10">
-      <v-col
-        cols="12"
-        sm="6"
-        md="3"
-        v-for="cardBonus in cardsBonus"
-        :key="cardBonus.img"
-        class="list-cards d-flex"
-      >
-        <div class="mx-auto">
-          <div
-            class="container-bonus"
-            :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
-          >
-            <span></span>
-            <h2>
-              {{ cardBonus.titulo }}
-            </h2>
-          </div>
-          <div class="container-p">
-            <p class="p-green">{{ cardBonus.precoDe }} |</p>
-            <p class="p-red">
-              {{ cardBonus.precoPor }}
+    <v-container>
+      <div class="title-bonus mx-auto mb-15">
+        <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'">Bônus!</h2>
+        <p>
+          E garantindo a sua vaga no
+          <b>período promocional você ganha mais 8 bônus:</b>
+        </p>
+      </div>
+      <v-row class="mb-10">
+        <v-col
+          cols="12"
+          sm="6"
+          md="3"
+          v-for="cardBonus in cardsBonus"
+          :key="cardBonus.img"
+          class="list-cards d-flex"
+        >
+          <div class="mx-auto">
+            <div
+              class="container-bonus"
+              :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
+            >
+              <span></span>
+              <h2>
+                {{ cardBonus.titulo }}
+              </h2>
+            </div>
+            <div class="container-p py-4">
+              <span class="p-green">{{ cardBonus.precoDe }}</span>
+              <span class="white--text px-2">|</span>
+              <span class="p-red font-weight-bold">
+                {{ cardBonus.precoPor }}
+              </span>
+            </div>
+            <p class="p-desc">
+              {{ cardBonus.description }}
             </p>
           </div>
-          <p class="p-desc">
-            {{ cardBonus.description }}
-          </p>
-        </div>
-      </v-col>
-    </v-row>
-    <v-container>
-      <div class="container-adesao">
-        <div class="border-green">
-          <div class="c-text-div pa-3">
-            <div class="h2-c-green text-uppercase">
-              <div :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold">
-                São mais de R$ 7 mil em bônus,
+        </v-col>
+      </v-row>
+      <v-container>
+        <div class="container-adesao">
+          <div class="border-green">
+            <div class="c-text-div pa-3">
+              <div class="h2-c-green text-uppercase">
+                <div :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold">
+                  São mais de R$ 7 mil em bônus,
+                </div>
+                <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : 'subtitle-1'" class="font-weight-medium">
+                  + acesso à metodologia exclusiva fast green ®
+                </div>
               </div>
-              <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : 'subtitle-1'" class="font-weight-medium">
-                + acesso à metodologia exclusiva fast green ®
+              <div class="p-c-green text-lg-h5 text-sm-body-2">
+                E você não vai pagar por nenhum deles!
               </div>
             </div>
-            <div class="p-c-green text-lg-h5 text-sm-body-2">
-              E você não vai pagar por nenhum deles!
+          </div>
+          <div class="background-pink py-12">
+            <div class="c-text-div">
+              <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''" class="text-lg-h5 text-bp">
+                <span class="text-white">E vamos além,</span> vamos te dar
+                <span class="text-black">R$ 3.000,00</span> de desconto no curso
+                <b class="text-brackground">Até dia 25/04</b>
+              </div>
             </div>
           </div>
+          <v-btn
+            x-large
+            color="white"
+            class="pink--text btn-pers"
+          >
+            <b>+ Adesão zero</b>
+          </v-btn>
         </div>
-        <div class="background-pink py-12">
-          <div class="c-text-div">
-            <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''" class="text-lg-h5 text-bp">
-              <span class="text-white">E vamos além,</span> vamos te dar
-              <span class="text-black">R$ 3.000,00</span> de desconto no curso
-              <b class="text-brackground">Até dia 25/04</b>
+      </v-container>
+      <!-- ========================================================= -->
+      <!-- <section class="container-cards">
+        <div class="c-adesao">
+          <div class="c-green">
+            <h4>Adesão: R$ 399</h4>
+          </div>
+          <div class="c-grey">
+            <div class="c-border">
+              <h2 class="h2-mensal">Mensal</h2>
+              <h1 class="h1-green">299,00</h1>
             </div>
           </div>
-        </div>
-        <v-btn
-          x-large
-          color="white"
-          class="pink--text btn-pers"
-        >
-          <b>+ Adesão zero</b>
-        </v-btn>
-      </div>
-    </v-container>
-    <!-- ========================================================= -->
-    <!-- <section class="container-cards">
-      <div class="c-adesao">
-        <div class="c-green">
-          <h4>Adesão: R$ 399</h4>
-        </div>
-        <div class="c-grey">
-          <div class="c-border">
-            <h2 class="h2-mensal">Mensal</h2>
-            <h1 class="h1-green">299,00</h1>
-          </div>
-        </div>
-        <div class="c-list-desc">
-          <ul class="desc-card">
-            <li v-for="(listItem1, i) in listItems1" :key="i">
-              <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
-              {{ listItem1.desc }}
-            </li>
-          </ul>
+          <div class="c-list-desc">
+            <ul class="desc-card">
+              <li v-for="(listItem1, i) in listItems1" :key="i">
+                <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
+                {{ listItem1.desc }}
+              </li>
+            </ul>
 
-          <button>Quero começar</button>
+            <button>Quero começar</button>
+          </div>
         </div>
-      </div>
-    </section> -->
+      </section> -->
+    </v-container>
   </section>
 </template>
 

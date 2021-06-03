@@ -14,7 +14,7 @@
             <button>Faça o teste grátis por 7 dias</button>
           </div>
         </v-col>
-        <v-col sm="1">
+        <v-col class="d-none d-md-block" sm="1">
           <img style="margin-left: -80%; margin-top: -80%;" src="/img/selo_setedias.png" alt="sete dias">
         </v-col>
       </v-row>

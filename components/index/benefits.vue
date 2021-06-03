@@ -1,55 +1,60 @@
 <template>
   <section class="wrapper">
-    <v-row>
-      <v-col class="d-flex align-center" cols="12" sm="7" md="6" offset-md="1">
-        <div>
-          <img class="img-notebook" src="/img/bg_note.png" alt="notebook">
-          <v-row class="my-card">
-            <v-col class="red darken-4 bd-radius-lt d-flex align-center" cols="2">
-              <v-icon class="mx-auto" color="white">
-                mdi-soccer
-              </v-icon>
-            </v-col>
-            <v-col class="red text-left bd-radius-rt-rb" cols="10">
-              <div class="font-weight-bold white--text">
-                Vai dar certo mesmo que você não entenda nada de futebol
-              </div>
-              <div class="caption white--text">
-                Será fácil nós te <span class="font-weight-bold">ensinamos tudo.</span>
-              </div>
-            </v-col>
-          </v-row>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="5" md="4">
-        <div class="title white--text text-left">
-          Aqui você tem o
-        </div>
-        <div class="display-3 primary--text font-weight-black text-left overing">
-          curso mais completo
-        </div>
-        <div class="slab">
-          Assim como nós, transforme sua vida!
-        </div>
-        <div
-          v-for="(benefit, i) in benefits"
-          :key="i"
-          :class="i + 1 === benefits.length ? 'bd-none' : ''"
-          class="border-bot-pers py-3 grey--text text-left"
-        >
-          {{benefit}}
-        </div>
-        <v-btn
-          class="my-15 my-sm-3 "
-          color="pink"
-          elevation="2"
-          dark
-          x-large
-        >
-          Comece agora
-        </v-btn>
-      </v-col>
-    </v-row>
+    <v-container>
+      <v-row>
+        <v-col class="d-flex align-center" cols="12" sm="7" md="6" offset-md="1">
+          <div>
+            <img class="img-notebook" src="/img/bg_note.png" alt="notebook">
+            <v-row class="my-card">
+              <v-col class="red darken-4 bd-radius-lt d-flex align-center" cols="2">
+                <v-icon class="mx-auto" color="white">
+                  mdi-soccer
+                </v-icon>
+              </v-col>
+              <v-col class="red text-left bd-radius-rt-rb" cols="10">
+                <div class="font-weight-bold white--text">
+                  Vai dar certo mesmo que você não entenda nada de futebol
+                </div>
+                <div class="caption white--text">
+                  Será fácil nós te <span class="font-weight-bold">ensinamos tudo.</span>
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </v-col>
+        <v-col cols="12" sm="5" md="4">
+          <div class="title white--text text-center text-sm-left">
+            Aqui você tem o
+          </div>
+          <div
+            :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-2'"
+            class=" primary--text font-weight-black text-center text-sm-left overing"
+          >
+            curso mais completo
+          </div>
+          <div class="slab">
+            Assim como nós, transforme sua vida!
+          </div>
+          <div
+            v-for="(benefit, i) in benefits"
+            :key="i"
+            :class="i + 1 === benefits.length ? 'bd-none' : ''"
+            class="border-bot-pers py-3 grey--text text-left"
+          >
+            {{benefit}}
+          </div>
+          <v-btn
+            class="my-15 my-sm-3 "
+            color="pink"
+            elevation="2"
+            dark
+            x-large
+          >
+            Comece agora
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
   </section>
 </template>
 
