@@ -1,15 +1,20 @@
 <template>
   <section class="wrapper">
-    <div class="title-bonus">
+    <div class="title-bonus mx-auto mb-15">
       <h2>Bônus!</h2>
       <p>
         E garantindo a sua vaga no
         <b>período promocional você ganha mais 8 bônus:</b>
       </p>
     </div>
+    <v-row>
+      <v-col cols="12" sm="6" md="3" v-for="cardBonus in cardsBonus" :key="cardBonus.titulo">
+        <span class="text-xl-h4 text-sm-body-2">TESTE</span>
+      </v-col>
+    </v-row>
     <div class="container-cards-bonus">
       <ul class="list-cards">
-        <li v-for="cardBonus in cardsBonus" :key="cardBonus">
+        <li v-for="cardBonus in cardsBonus" :key="cardBonus.titulo">
           <div
             class="container-bonus"
             :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
@@ -169,8 +174,7 @@ export default {
 
 .title-bonus {
   width: 100%;
-  margin-bottom: 4rem;
-  padding: 0 25rem;
+  max-width: 500px;
   h2 {
     color: #a6ff3f;
     font-size: 4rem;
