@@ -9,7 +9,7 @@
     <sixthBanner />
     <seventhBanner />
     <eighthBanner />
-    <ninethBanner />
+    <customerOpinion />
     <tenthBanner />
     <eleventhBanner />
     <twelfthBanner />
@@ -29,7 +29,7 @@ import fifthBanner from "/components/index/fifth_banner.vue";
 import sixthBanner from "/components/index/sixth_banner.vue";
 import seventhBanner from "/components/index/seventh_banner.vue";
 import eighthBanner from "/components/index/eighth_banner.vue";
-import ninethBanner from "/components/index/nineth_banner.vue";
+import customerOpinion from "/components/index/customer_opinion";
 import tenthBanner from "/components/index/tenth_banner.vue";
 import eleventhBanner from "/components/index/eleventh_banner.vue";
 import twelfthBanner from "/components/index/twelfth_banner.vue";
@@ -48,7 +48,7 @@ export default {
     sixthBanner,
     seventhBanner,
     eighthBanner,
-    ninethBanner,
+    customerOpinion,
     tenthBanner,
     eleventhBanner,
     twelfthBanner,

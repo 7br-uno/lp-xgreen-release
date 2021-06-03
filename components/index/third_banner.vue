@@ -52,9 +52,6 @@ export default {
       line-height: 1;
     }
     ul{
-      display: flex;
-      justify-content: end;
-      align-items: center;
       li{
         list-style: none;
         display: flex;
@@ -79,6 +76,12 @@ export default {
   }
   .container {
     width: 100% !important;
+  }
+  li {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 </style>
