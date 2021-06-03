@@ -1,59 +1,61 @@
 <template>
   <section class="wrapper">
-    <h2 class="mx-auto mb-15">Está na hora de
-      <b class="text-green">realizar seus sonhos</b>
-      aproveite o valor promocional em até:
-    </h2>
-    <client-only>
-      <vac class="w-100" :end-time="endTime">
-        <v-row
-          class="w-100"
-          slot="process"
-          slot-scope="{ timeObj }"
-        >
-          <v-col class="pa-0">
-            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
-              {{ `${timeObj.d}` }}
-            </div>
-            <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
-              Dias
-            </div>
-          </v-col>
-          <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">:</div>
-          <v-col class="pa-0">
-            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
-              {{ `${timeObj.h}` }}
-            </div>
-            <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
-              Horas
-            </div>
-          </v-col>
-          <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">:</div>
-          <v-col class="pa-0">
-            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
-              {{ `${timeObj.m}` }}
-            </div>
-            <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
-              Minutos
-            </div>
-          </v-col>
-          <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">:</div>
-          <v-col class="pa-0">
-            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
-              {{ `${timeObj.s}` }}
-            </div>
-            <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
-              Segundos
-            </div>
-          </v-col>
-        </v-row>
-        <span class="w-100" slot="finish">Done!</span>
-      </vac>
-    </client-only>
-    <div class="container-text-button">
-      <p>A X-Green te ajuda a conquistá-los</p>
-      <button class="mt-5">Comece Agora</button>
-    </div>
+    <v-container>
+      <h2 class="mx-auto mb-15">Está na hora de
+        <b class="text-green">realizar seus sonhos</b>
+        aproveite o valor promocional em até:
+      </h2>
+      <client-only>
+        <vac class="w-100" :end-time="endTime">
+          <v-row
+            class="w-100"
+            slot="process"
+            slot-scope="{ timeObj }"
+          >
+            <v-col class="pa-0">
+              <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
+                {{ `${timeObj.d}` }}
+              </div>
+              <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
+                Dias
+              </div>
+            </v-col>
+            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">:</div>
+            <v-col class="pa-0">
+              <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
+                {{ `${timeObj.h}` }}
+              </div>
+              <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
+                Horas
+              </div>
+            </v-col>
+            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">:</div>
+            <v-col class="pa-0">
+              <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
+                {{ `${timeObj.m}` }}
+              </div>
+              <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
+                Minutos
+              </div>
+            </v-col>
+            <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">:</div>
+            <v-col class="pa-0">
+              <div :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'title'" class="green-font-color">
+                {{ `${timeObj.s}` }}
+              </div>
+              <div :class="$vuetify.breakpoint.smAndUp ? 'overline' : 'caption'" class="green-font-color-stt pt-2">
+                Segundos
+              </div>
+            </v-col>
+          </v-row>
+          <span class="w-100" slot="finish">Done!</span>
+        </vac>
+      </client-only>
+      <div class="container-text-button">
+        <p>A X-Green te ajuda a conquistá-los</p>
+        <button class="mt-5">Comece Agora</button>
+      </div>
+    </v-container>
   </section>
 </template>
 <script>
@@ -88,7 +90,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height:  calc(100vh + 2rem);
+  min-height:  calc(70vh + 2rem);
   h2{
     font-size: 30px;
     line-height: 1.2;

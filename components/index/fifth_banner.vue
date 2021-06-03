@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <div class="container">
-      <h2 :class="$vuetify.breakpoint.smAndUp ? 'display-2' : 'headline'">Você acha que está muito bom para ser verdade?</h2>
+      <h2 style="max-width: 830px;" :class="$vuetify.breakpoint.smAndUp ? 'display-2' : 'headline'">Você acha que está muito bom para ser verdade?</h2>
       <v-chip
         :large="$vuetify.breakpoint.smAndUp"
         class="ma-5"

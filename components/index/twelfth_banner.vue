@@ -1,20 +1,22 @@
 <template>
   <section class="wrapper">
-    <h1>Perguntas frequentes</h1>
-    <v-expansion-panels
-      multiple
-      v-for="(question, i) in questions"
-      :key="i"
-    >
-      <v-expansion-panel class="bg-panel">
-        <v-expansion-panel-header class="panel-title"
-          >{{ question.title }}
-        </v-expansion-panel-header>
-        <v-expansion-panel-content class="panel-description">
-          {{ question.description }}
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
+    <v-container>
+      <h1 class="text-center mb-6">Perguntas frequentes</h1>
+      <v-expansion-panels
+        multiple
+        v-for="(question, i) in questions"
+        :key="i"
+      >
+        <v-expansion-panel class="bg-panel">
+          <v-expansion-panel-header class="panel-title"
+            >{{ question.title }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content class="panel-description">
+            {{ question.description }}
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-container>
   </section>
 </template>
 
@@ -60,7 +62,7 @@ export default {
 <style scoped lang="scss">
 .wrapper {
   background: #000000;
-  padding: 100px;
+  padding: 80px 20px;
   display: flex;
   align-items: center;
   justify-content: center;

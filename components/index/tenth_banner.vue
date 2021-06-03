@@ -43,7 +43,7 @@
       <v-container>
         <div class="container-adesao">
           <div class="border-green">
-            <div class="c-text-div pa-3">
+            <div class="c-text-div px-3 py-5">
               <div class="h2-c-green text-uppercase">
                 <div :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold">
                   São mais de R$ 7 mil em bônus,
@@ -271,7 +271,6 @@ export default {
 }
 .border-green {
   width: 100%;
-  height: 160px;
   border-top: 4px solid #a6ff3f;
   border-left: 4px solid #a6ff3f;
   border-right: 4px solid #a6ff3f;

@@ -1,6 +1,6 @@
 <template>
   <v-footer color="black" class="white--text py-16">
-    <v-container class="my-16">
+    <v-container class="my-16 px-10">
       <v-row>
         <v-col cols="12" md="6">
           <div class="d-flex align-center">
