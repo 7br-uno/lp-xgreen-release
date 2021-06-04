@@ -13,7 +13,6 @@
     <tenthBanner />
     <eleventhBanner />
     <twelfthBanner />
-    <thirteenthBanner />
     <counter />
     <fifteenthBanner />
   </div>
@@ -33,7 +32,6 @@ import customerOpinion from "/components/index/customer_opinion";
 import tenthBanner from "/components/index/tenth_banner.vue";
 import eleventhBanner from "/components/index/eleventh_banner.vue";
 import twelfthBanner from "/components/index/twelfth_banner.vue";
-import thirteenthBanner from "/components/index/thirteenth_banner.vue";
 import counter from "/components/index/counter.vue";
 import fifteenthBanner from "/components/index/fifteenth_banner.vue";
 
@@ -52,7 +50,6 @@ export default {
     tenthBanner,
     eleventhBanner,
     twelfthBanner,
-    thirteenthBanner,
     counter,
     fifteenthBanner,
   },

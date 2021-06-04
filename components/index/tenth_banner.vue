@@ -173,11 +173,6 @@ export default {
             "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
         },
       ],
-      items: [
-        { text: "Real-Time", icon: "mdi-clock" },
-        { text: "Audience", icon: "mdi-account" },
-        { text: "Conversions", icon: "mdi-flag" },
-      ],
 
       listItems1: [
         { desc: "Curso completo" },

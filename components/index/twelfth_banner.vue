@@ -1,16 +1,17 @@
 <template>
   <section class="wrapper">
     <h1>Perguntas frequentes</h1>
-    <v-expansion-panels
-      multiple
-      v-for="(question, i) in questions"
-      :key="i"
-    >
+    <v-expansion-panels multiple v-for="(question, i) in questions" :key="i">
       <v-expansion-panel class="bg-panel">
-        <v-expansion-panel-header class="panel-title"
+        <v-expansion-panel-header
+          class="panel-title"
+          :class="$vuetify.breakpoint.smAndUp ? '' : 'caption'"
           >{{ question.title }}
         </v-expansion-panel-header>
-        <v-expansion-panel-content class="panel-description">
+        <v-expansion-panel-content
+          class="panel-description"
+          :class="$vuetify.breakpoint.smAndUp ? '' : 'caption'"
+        >
           {{ question.description }}
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -77,11 +78,9 @@ export default {
   margin-bottom: 1rem;
 }
 .panel-title {
-  font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
 }
-
 
 .panel-description {
   color: #ffffff;
