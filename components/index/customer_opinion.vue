@@ -1,7 +1,14 @@
 <template>
   <section class="wrapper">
     <h1>Veja a opinião dos nossos clientes</h1>
-    <v-carousel :show-arrows="false" cycle hide-delimiter-background>
+    <v-carousel height="350" class="d-block d-sm-none" :show-arrows="false" hide-delimiter-background>
+      <v-carousel-item v-for="(single, i) in all" :key="i">
+        <div class="mt-8">
+          <img :src="single" alt="" class="img-chat" />
+        </div>
+      </v-carousel-item>
+    </v-carousel>
+    <v-carousel class="d-none d-sm-block" :show-arrows="false" cycle hide-delimiter-background>
       <v-carousel-item>
         <div class="container-chat-3">
           <div v-for="(img1, i) in imgs1" :key="i">
@@ -24,6 +31,7 @@
 export default {
   data() {
     return {
+      all: ["/img/chat01.png", "/img/chat02.png", "/img/chat03.png", "/img/chat04.png", "/img/chat05.png", "/img/chat06.png"],
       imgs1: ["/img/chat01.png", "/img/chat02.png", "/img/chat03.png"],
       imgs2: ["/img/chat04.png", "/img/chat05.png", "/img/chat06.png"],
     };
@@ -47,15 +55,23 @@ export default {
   }
 }
 .container-chat-3 {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
+  margin: 0 auto;
 }
 .img-chat {
-  width: 50%;
+  width: 85%;
+}
+
+@media (min-width: 992px) {
+  .img-chat {
+    width: 250px;
+    margin-right: 4px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -66,18 +82,8 @@ export default {
     }
   }
   .img-chat {
-  width: 150px;
-  margin-right: 4px;
-}
-}
-
-@media (max-width: 600px) {
-
-.container-chat-3 {
-  flex-direction: column;
-}
-.img-chat {
-  width: 80%;
-}
+    width: 190px;
+    margin-right: 4px;
+  }
 }
 </style>
