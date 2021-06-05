@@ -2,7 +2,13 @@
   <section class="wrapper">
     <v-container>
       <div class="title-bonus mx-auto mb-15">
-        <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'">Bônus!</h2>
+        <h2
+          :class="
+            $vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'
+          "
+        >
+          Bônus!
+        </h2>
         <p>
           E garantindo a sua vaga no
           <b>período promocional você ganha mais 8 bônus:</b>
@@ -45,10 +51,20 @@
           <div class="border-green">
             <div class="c-text-div px-3 py-5">
               <div class="h2-c-green text-uppercase">
-                <div :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold">
+                <div
+                  :class="
+                    $vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'
+                  "
+                  class="font-weight-bold"
+                >
                   São mais de R$ 7 mil em bônus,
                 </div>
-                <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : 'subtitle-1'" class="font-weight-medium">
+                <div
+                  :class="
+                    $vuetify.breakpoint.smAndUp ? 'headline' : 'subtitle-1'
+                  "
+                  class="font-weight-medium"
+                >
                   + acesso à metodologia exclusiva fast green ®
                 </div>
               </div>
@@ -59,32 +75,43 @@
           </div>
           <div class="background-pink py-12">
             <div class="c-text-div">
-              <div :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''" class="text-lg-h5 text-bp">
+              <div
+                :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''"
+                class="text-lg-h5 text-bp"
+              >
                 <span class="text-white">E vamos além,</span> vamos te dar
                 <span class="text-black">R$ 3.000,00</span> de desconto no curso
                 <b class="text-brackground px-2">Até dia 25/04</b>
               </div>
             </div>
           </div>
-          <v-btn
-            x-large
-            color="white"
-            class="pink--text btn-pers"
-          >
+          <v-btn x-large color="white" class="pink--text btn-pers">
             <b>+ Adesão zero</b>
           </v-btn>
         </div>
       </v-container>
       <!-- ========================================================= -->
-      <!-- <section class="container-cards">
-        <div class="c-adesao">
+      <!-- <section class="container-cards"> -->
+      <div
+        class="d-flex justify-center mb-10 mt-10 white--text"
+        :class="$vuetify.breakpoint.smAndUp ? 'headline' : 'subtitle-1'"
+      >
+        Começando hoje, você vai ter:
+      </div>
+      <v-row class="d-flex justify-center">
+        <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
           <div class="c-green">
             <h4>Adesão: R$ 399</h4>
           </div>
           <div class="c-grey">
+            <h2 class="h2-mensal">Mensal</h2>
             <div class="c-border">
-              <h2 class="h2-mensal">Mensal</h2>
-              <h1 class="h1-green">299,00</h1>
+              <div class="c-b-h1">
+                <h1 class="h1-green">299,</h1>
+              </div>
+              <div class="c-b-p">
+                <p>00</p>
+              </div>
             </div>
           </div>
           <div class="c-list-desc">
@@ -97,8 +124,78 @@
 
             <button>Quero começar</button>
           </div>
-        </div>
-      </section> -->
+        </v-col>
+
+        <v-col cols="12" sm="12" md="6" lg="4" class="ma-auto mb-10 mx-adesao">
+          <div class="c-green white">
+            <h4>Adesão: R$ 399</h4>
+            <img
+              class="img-desconto"
+              src="/img/selo_85desconto.png"
+              alt="Bonus 85% de desconto"
+            />
+          </div>
+          <div class="c-grey light-green darken-4">
+            <h2 class="h2-mensal light-green darken-4">Anual</h2>
+            <div class="c-border">
+              <div class="c-b-h1">
+                <h1 class="h1-green white--text">49,</h1>
+              </div>
+              <div class="c-b-p">
+                <p class="white--text">00</p>
+                <p>p/mês</p>
+              </div>
+            </div>
+          </div>
+          <div class="c-list-desc light-green accent-4">
+            <ul class="desc-card">
+              <li v-for="(listItem1, i) in listItems1" :key="i">
+                <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
+                {{ listItem1.desc }}
+              </li>
+            </ul>
+
+            <button color="white" class="pink">Quero começar</button>
+          </div>
+        </v-col>
+        <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
+          <div class="c-green active">
+            <h4>Adesão: R$ 399</h4>
+          </div>
+          <div class="c-grey">
+            <h2 class="h2-mensal">Semestral</h2>
+            <div class="c-border">
+              <div class="c-b-h1">
+                <h1 class="h1-green">199,</h1>
+              </div>
+              <div class="c-b-p">
+                <p>00</p>
+                <p>p/mês</p>
+              </div>
+            </div>
+          </div>
+          <div class="c-list-desc">
+            <ul class="desc-card">
+              <li v-for="(listItem1, i) in listItems1" :key="i">
+                <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
+                {{ listItem1.desc }}
+              </li>
+            </ul>
+
+            <button>Quero começar</button>
+          </div>
+        </v-col>
+      </v-row>
+      <div
+        class="d-flex justify-center mb-10 mt-10 white--text"
+        :class="$vuetify.breakpoint.smAndUp ? 'body-1' : 'body-2'"
+      >
+        Formas de pagamento: Cartão de crédito, boleto a vista, Paypal, Conta
+        Hotmart e Sansung Pay
+      </div>
+      <div class="d-flex justify-center">
+        <img src="/img/logos_pagamentos.jpg" alt="" />
+      </div>
     </v-container>
   </section>
 </template>
@@ -189,6 +286,10 @@ export default {
         { desc: "8 bônus exclusivos" },
         { desc: "Suporte on-line" },
       ],
+
+      // planos[
+      //   {precoAdesao: "299,", plano:"Mensal", }
+      // ]
     };
   },
 };
@@ -196,7 +297,7 @@ export default {
 
 
 <style scoped lang="scss">
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .wrapper {
     padding: 70px 20px !important;
   }
@@ -252,7 +353,7 @@ export default {
   }
 }
 
-.btn-pers{
+.btn-pers {
   border-radius: 30px;
   margin-top: -25px;
   width: 220px;
@@ -348,11 +449,32 @@ export default {
 
 /* ===========Card adesão ================ */
 
-.c-adesao {
-  width: 260px;
-  height: 460px;
+.img-desconto {
+  position: relative;
+  bottom: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
 }
 
+.c-adesao {
+  max-width: 260px;
+  height: 460px;
+}
+.mx-adesao {
+  max-width: 300px;
+  height: 480px;
+  ul {
+    :first-child {
+      color: #000000 !important;
+    }
+  }
+  .c-green {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 .c-green {
   width: 100%;
   height: 12%;
@@ -370,26 +492,50 @@ export default {
   height: 26%;
   background: #919191;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   padding-bottom: 4px;
   .c-border {
     width: 80%;
-    height: 70%;
     border: 3px solid;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
   }
   .h2-mensal {
     background-color: #919191;
     position: relative;
-    top: -8px;
+    bottom: -20px;
   }
-  .h1-green {
-    color: #a6ff3f;
-    font-size: 50px;
+  .c-b-h1 {
+    width: 60%;
+    .h1-green {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #a6ff3f;
+      font-size: 50px;
+    }
+  }
+  .c-b-p {
+    width: 40%;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    :first-child {
+      color: #a6ff3f;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 .c-list-desc {

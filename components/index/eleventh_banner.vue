@@ -3,6 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12" offset-sm="5" sm="6" class="px-8 px-sm-0">
+          <img class="float-right" src="/img/selo_setedias.png" alt="sete dias">
           <div class="teste-gratis">
             <h2 :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold white--text mb-5">Sua experiência vai ser matadora!!!</h2>
             <p>Então <b>teste o nosso produto gratis por sete dias.</b>
@@ -13,9 +14,6 @@
 
             <button>Faça o teste grátis por 7 dias</button>
           </div>
-        </v-col>
-        <v-col class="d-none d-md-block" sm="1">
-          <img style="margin-left: -80%; margin-top: -80%;" src="/img/selo_setedias.png" alt="sete dias">
         </v-col>
       </v-row>
     </v-container>
