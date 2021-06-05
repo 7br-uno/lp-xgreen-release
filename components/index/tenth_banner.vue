@@ -135,8 +135,8 @@
               alt="Bonus 85% de desconto"
             />
           </div>
-          <div class="c-grey light-green darken-4">
-            <h2 class="h2-mensal light-green darken-4">Anual</h2>
+          <div class="c-grey verde-escuro">
+            <h2 class="h2-mensal verde-escuro">Anual</h2>
             <div class="c-border">
               <div class="c-b-h1">
                 <h1 class="h1-green white--text">49,</h1>
@@ -147,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="c-list-desc light-green accent-4">
+          <div class="c-list-desc verde-claro">
             <ul class="desc-card">
               <li v-for="(listItem1, i) in listItems1" :key="i">
                 <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
@@ -155,7 +155,7 @@
               </li>
             </ul>
 
-            <button color="white" class="pink">Quero começar</button>
+            <button class="pink white--text">Quero começar</button>
           </div>
         </v-col>
         <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
@@ -458,7 +458,7 @@ export default {
 }
 
 .c-adesao {
-  max-width: 260px;
+  max-width: 290px;
   height: 460px;
 }
 .mx-adesao {
@@ -553,7 +553,7 @@ export default {
     list-style: none;
   }
   ul {
-    padding-left: 0px;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -570,11 +570,18 @@ export default {
 
 button {
   width: 80%;
-  background: #a6ff3f;
+  background: #7fd12d;
   color: #ffffff;
   height: 14%;
   border-radius: 6px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.verde-claro{
+  background: #a6fe3e;
+}
+.verde-escuro{
+  background-color: #7fd12d !important;
 }
 </style>
