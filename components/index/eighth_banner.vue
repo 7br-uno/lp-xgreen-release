@@ -5,7 +5,7 @@
     <div class="container">
 
 
-      <v-row>
+      <v-row >
         <v-col cols="12" md="6" lg="4">
           <div class="robozao_strategist mx-auto">
             <div>
