@@ -1,18 +1,22 @@
 <template>
   <section class="wrapper pt-16">
-    <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'" class="mt-10 mx-auto">E mais: Temos o Robozão absurdamente bom!</h2>
+    <h2
+      :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'"
+      class="mt-10 mx-auto"
+    >
+      E mais: Temos o Robozão absurdamente bom!
+    </h2>
     <p class="text-green">(E que não foi barato)</p>
     <div class="container">
-
-
-      <v-row >
+      <v-row>
         <v-col cols="12" md="6" lg="4">
           <div class="robozao_strategist mx-auto">
             <div>
               <img src="/img/icone_robozao_televisao_01.png" alt="" />
               <p>
-                Uma inteligência artificial, apelidada de Robozão, indicada as
-                nelhores entradas e jogos da nossa estratégia vencedora desde 2018
+                Uma inteligência artificial, apelidada de Robozão, indica as
+                nelhores entradas e jogos da nossa estratégia vencedora desde
+                2018
               </p>
             </div>
           </div>
@@ -22,8 +26,9 @@
             <div>
               <img src="/img/icone_robozao_uniao_02.png" alt="" />
               <p>
-                Uma inteligência artificial, apelidada de Robozão, indicada as
-                nelhores entradas e jogos da nossa estratégia vencedora desde 2018
+                A partir da análise do Robozão, nossa equipe de especialistas
+                avalia as partidas e indica as melhores entradas do mercado para
+                você replicar.
               </p>
             </div>
           </div>
@@ -33,8 +38,8 @@
             <div>
               <img src="/img/icone_robozao_bola_03.png" alt="" />
               <p>
-                Uma inteligência artificial, apelidada de Robozão, indicada as
-                nelhores entradas e jogos da nossa estratégia vencedora desde 2018
+                A união dos nossos tipster com o Robozão é o que faz da nossa
+                metodologia única, um sucesso.
               </p>
             </div>
           </div>
@@ -44,7 +49,7 @@
   </section>
 </template>
 <style scoped lang="scss">
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .wrapper {
     padding: 30px 20px !important;
   }

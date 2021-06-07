@@ -16,7 +16,7 @@
                   Vai dar certo mesmo que você não entenda nada de futebol
                 </div>
                 <div class="caption white--text">
-                  Será fácil nós te <span class="font-weight-bold">ensinamos tudo.</span>
+                  Será fácil, nós te <span class="font-weight-bold">ensinamos tudo.</span>
                 </div>
               </v-col>
             </v-row>

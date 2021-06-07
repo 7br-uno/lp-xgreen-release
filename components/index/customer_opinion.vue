@@ -1,6 +1,6 @@
 <template>
   <section class="wrapper">
-    <h1>Veja a opinião dos nossos clientes</h1>
+    <h1>Se liga na opinião da galera</h1>
     <v-carousel height="350" class="d-block d-sm-none" :show-arrows="false" hide-delimiter-background>
       <v-carousel-item v-for="(single, i) in all" :key="i">
         <div class="mt-8">

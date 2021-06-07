@@ -28,7 +28,7 @@
               class="container-bonus"
               :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
             >
-              <span></span>
+              <div style="background-color: #00ff00" class="rounded-lg color-indice "></div>
               <h2>
                 {{ cardBonus.titulo }}
               </h2>
@@ -207,67 +207,67 @@ export default {
       cardsBonus: [
         {
           img: "/img/bonus1.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Acesso à metodologia X-Green",
+          precoDe: "Imensurável!",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "Conheça detalhadamente a estratégia vencedora da X-Green",
         },
         {
           img: "/img/bonus2.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Acesso ao Grupo Vip Telegram X-Green",
+          precoDe: "R$300",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "No grupo, você poderá copiar as nossas entradas e lucrar mais",
         },
         {
           img: "/img/bonus3.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Acesso às planilhas vencedoras X-Green",
+          precoDe: "R$200",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "Gestão de banca, juros compostos e evolução dos resultados",
         },
         {
           img: "/img/bonus4.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Consultoria de planejamento financeiro e investimentos Six Capital",
+          precoDe: "R$500",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "Aprenda com uma das melhores consultorias do mercado",
         },
         {
           img: "/img/bonus5.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Guia: como não ser limitado nas casas",
+          precoDe: "R$500",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "As casas de investimentos não impedirão o seu crescimento",
         },
         {
           img: "/img/bonus6.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Como fazer o seu IR ",
+          precoDe: "R$200",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "Aprenda a declarar os seus lucros",
         },
         {
           img: "/img/bonus7.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Investimentos em outros esportes",
+          precoDe: "R$1.000",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "Corridas de galgos e mais novidades",
         },
         {
           img: "/img/bonus8.jpg",
-          titulo: "Acesso à metodologia X-green",
-          precoDe: "R$1.599",
+          titulo: "Lives exclusivas ",
+          precoDe: "R$300",
           precoPor: "R$0.00",
           description:
-            "Abriremos para você como funciona a nossa estratégia vencedora de investimentos.",
+            "Veja vídeos exclusivos com os nossos especialistas",
         },
       ],
       items: [
@@ -287,9 +287,6 @@ export default {
         { desc: "Suporte on-line" },
       ],
 
-      // planos[
-      //   {precoAdesao: "299,", plano:"Mensal", }
-      // ]
     };
   },
 };
@@ -307,7 +304,10 @@ export default {
   padding: 100px;
   text-align: center;
 }
-
+.color-indice{
+  height: 10px;
+  width: 40px;
+}
 .title-bonus {
   width: 100%;
   max-width: 500px;
@@ -332,9 +332,13 @@ export default {
   border: 8px solid #606060;
   border-radius: 4px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
   h2 {
     color: #ffffff;
+    text-align: initial;
   }
 }
 .p-desc {

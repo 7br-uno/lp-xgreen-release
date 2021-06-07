@@ -52,9 +52,9 @@ export default {
       ],
       courses3: [
         "Principais mercados: resultado correto, gols, escanteios, entre outros",
-        "Planejamento financeiro/juros compostos",
-        "Conceitos: ODDs, ROI, Punter, Trader, etc",
-        "Grupo Vip do Telegram com entradas para copiar",
+        "Principais técnicas: back, lay, over, under, entre outras",
+        "Alavancagem: comece com pouco dinheiro",
+        "Análise pré jogo: aprenda como analisar uma partida",
       ]
     };
   },
