@@ -26,32 +26,32 @@ export default {
     return {
       questions: [
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "",
+          title: "Como funciona o teste de 7 dias / cancelamento",
+          description: "Ao optar pelo teste grátis, você terá até 7 dias para cancelar a sua inscrição na plataforma de compra, sem enrolação.",
         },
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "",
+          title: "O Ambiente de pagamento é seguro?",
+          description: "A plataforma Hotmart certifica a segurança e a proteção de seus dados pessoais e financeiros.",
         },
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "",
+          title: "Quais são as formas de pagamento?",
+          description: "Trabalhamos com as seguintes formas de pagamento: Cartão de crédito, Boleto à vista, Conta hotmart e Pay Pal.",
         },
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "Se você seguir a nossa estratégia exatamente à risca",
+          title: "Preciso entender de futebol?",
+          description: "Não, para iniciar no método da X-Green não é preciso entender de futebol ou de outros esportes. Nós ensinamos tudo de uma maneira fácil, do básico ao avançado.",
         },
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "",
+          title: "Preciso ter muito dinheiro?",
+          description: "Não, durante o curso você vai aprender técnicas para começar a investir com pouco dinheiro.",
         },
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "",
+          title: "Como acesso o Grupo Vip?",
+          description: "Ao realizar a sua compra, será disponibilizado um link de acesso exclusivo para o Grupo Vip, onde você poderá copiar as nossas entradas.",
         },
         {
-          title: "Como funciona o teste de 7 dias/cancelamento",
-          description: "",
+          title: "Como funciona o suporte?",
+          description: "Nossa equipe está sempre ligada. Mande um e-mail ou WhatsApp que responderemos quaisquer dúvidas.",
         },
       ],
     };

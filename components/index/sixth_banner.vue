@@ -19,6 +19,35 @@
           </div>
           <div class="black text-center rounded-lg pa-3 mt-3">
             <div class="font-weight-bold">
+              Índice
+            </div>
+            <div class="font-weight-bold">
+              <div class="d-flex align-center text-center">
+                <div style="background-color: #ff8600" class="rounded-lg color-indice ml-auto"></div>
+                <div class="ml-2 mr-auto">Poupança</div>
+              </div>
+            </div>
+            <div class="font-weight-bold">
+              <div class="d-flex align-center text-center">
+                <div style="background-color: #00f1ea" class="rounded-lg color-indice ml-auto"></div>
+                <div class="ml-2 mr-auto">Ibovespa</div>
+              </div>
+            </div>
+            <div class="font-weight-bold">
+              <div class="d-flex align-center text-center">
+                <div style="background-color: #b000ff" class="rounded-lg color-indice ml-auto"></div>
+                <div class="ml-2 mr-auto">Bitcoin</div>
+              </div>
+            </div>
+            <div class="font-weight-bold">
+              <div class="d-flex align-center text-center">
+                <div style="background-color: #00ff00" class="rounded-lg color-indice ml-auto"></div>
+                <div class="ml-2 mr-auto">X-GREEN</div>
+              </div>
+            </div>
+          </div>
+          <div class="black text-center rounded-lg pa-3 mt-3">
+            <div class="font-weight-bold">
               Rendimento anual X-GREEN
             </div>
             <div class="font-weight-bold ml-4">
@@ -49,7 +78,7 @@
           <line-chart :chart-data="datacollection" :options="chartOptions" class="graph mx-auto my-0 my-md-10"></line-chart>
         </v-col>
       </v-row>
-      <div v-if="!$vuetify.breakpoint.mdAndUp" style="height: 280px"></div>
+      <div v-if="!$vuetify.breakpoint.mdAndUp" style="height: 445px"></div>
       <div class="text-center white--text font-weight-bold headline mb-15 pt-10 text-uppercase">
         Lembre-se: Você vai poder copiar a nossa estratégia e lucrar mais
       </div>
@@ -78,7 +107,10 @@ export default {
       datacollection: null,
       chartOptions:{
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        }
       }
     }
   },
@@ -148,5 +180,9 @@ export default {
 }
 .lh-12{
   line-height: 1.1;
+}
+.color-indice{
+  height: 10px;
+  width: 20px;
 }
 </style>
