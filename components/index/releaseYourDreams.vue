@@ -95,7 +95,7 @@ export default {
     font-size: 30px;
     line-height: 1.2;
     color: #ffff;
-    max-width: 500px;
+    max-width: 600px;
     font-weight: 400;
   }
   .text-green{

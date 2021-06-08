@@ -57,8 +57,6 @@
       line-height: 1;
       font-weight: 600;
     }
-    p {
-    }
     .container-attention {
       width: 50%;
       display: flex;

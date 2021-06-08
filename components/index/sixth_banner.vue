@@ -5,7 +5,7 @@
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
         class="mt-15 pt-10 primary--text font-weight-black text-center overing text-uppercase"
       >
-        Rendimento desde 2008
+        Rendimento desde 2018
       </div>
       <v-row class="white--text graph-div mb-16">
         <v-col cols="12" md="3" :order="$vuetify.breakpoint.mdAndUp ? 'last' : ''">
@@ -18,9 +18,6 @@
             </span>
           </div>
           <div class="black text-center rounded-lg pa-3 mt-3">
-            <div class="font-weight-bold">
-              Índice
-            </div>
             <div class="font-weight-bold">
               <div class="d-flex align-center text-center">
                 <div style="background-color: #ff8600" class="rounded-lg color-indice ml-auto"></div>
@@ -54,10 +51,10 @@
               2018 <span class="yellow--text ml-2">+ 506%*</span>
             </div>
             <div class="font-weight-bold ml-4">
-              2019 <span class="yellow--text ml-2">+ 808%*</span>
+              2019 <span class="yellow--text ml-2">+ 808%</span>
             </div>
             <div class="font-weight-bold ml-4">
-              2020 <span class="yellow--text ml-2">+ 936%*</span>
+              2020 <span class="yellow--text ml-2">+ 936%</span>
             </div>
             <div class="font-weight-bold ml-4">
               2021 <span class="blue--text darken-1 ml-2">+ 276%**</span>
@@ -120,7 +117,7 @@ export default {
   methods: {
     fillData () {
       this.datacollection = {
-        labels: ['2017', '2018', '2019', '2020', '2021'],
+        labels: ['', '2018', '2019', '2020', '2021'],
         datasets: [
           {
             label: 'X-GREEN',
@@ -128,7 +125,7 @@ export default {
             fill: false,
             borderColor: '#00ff00',
             borderWidth: 6,
-            data: [15, 60, 80, 100, 60]
+            data: [2, 60, 80, 100, 60]
           },
           {
             label: 'Bitcoin',
@@ -136,7 +133,7 @@ export default {
             fill: false,
             borderColor: '#b000ff',
             borderWidth: 5,
-            data: [13, 30, 45, 44, 30],
+            data: [1, 30, 45, 44, 30],
           },
           {
             label: 'Ibovespa',
@@ -144,7 +141,7 @@ export default {
             fill: false,
             borderColor: '#00f1ea',
             borderWidth: 5,
-            data: [10, 25, 30, 15, 9],
+            data: [0, 25, 30, 15, 9],
           },
           {
             label: 'Poupança',
@@ -152,7 +149,7 @@ export default {
             fill: false,
             borderColor: '#ff8600',
             borderWidth: 5,
-            data: [10, 15, 13, 14, 10],
+            data: [0, 15, 13, 14, 10],
           },
         ]
       }

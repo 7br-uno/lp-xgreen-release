@@ -6,7 +6,7 @@
           <img class="float-right" src="/img/selo_setedias.png" alt="sete dias">
           <div class="teste-gratis">
             <h2 :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold white--text mb-5">Sua experiência vai ser matadora!!!</h2>
-            <p>Então <b>teste o nosso produto gratis por sete dias.</b>
+            <p><b>Teste o nosso produto gratis por sete dias.</b>
               Aproveite este periodo e confirme o nosso rendimento e tudo o que estamos afirmando aqui!
             </p>
             <p>Se não quiser continuar, cancelamos a sua inscrição sem qualquer enrolação.</p>
