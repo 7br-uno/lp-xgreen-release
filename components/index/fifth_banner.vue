@@ -44,7 +44,7 @@
 .wrapper {
   width: 100%;
   background: #fffd00;
-  padding: 6.25rem;
+  padding: 3.25rem;
   .container{
 
     display: flex;

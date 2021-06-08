@@ -3,7 +3,7 @@
     <v-container>
       <div
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
-        class="mt-15 pt-10 primary--text font-weight-black text-center overing text-uppercase"
+        class="mt-5 pt-10 primary--text font-weight-black text-center overing text-uppercase"
       >
         Rendimento desde 2018
       </div>
@@ -19,28 +19,44 @@
           </div>
           <div class="black text-center rounded-lg pa-3 mt-3">
             <div class="font-weight-bold">
-              <div class="d-flex align-center text-center">
-                <div style="background-color: #ff8600" class="rounded-lg color-indice ml-auto"></div>
-                <div class="ml-2 mr-auto">Poupança</div>
-              </div>
+              <v-row class="pt-1">
+                <v-col class="d-flex align-center py-1" cols="5" md="4">
+                  <div style="background-color: #ff8600" class="rounded-lg color-indice ml-auto"></div>
+                </v-col>
+                <v-col class="py-1">
+                  <div class="text-left">Poupança</div>
+                </v-col>
+              </v-row>
             </div>
             <div class="font-weight-bold">
-              <div class="d-flex align-center text-center">
-                <div style="background-color: #00f1ea" class="rounded-lg color-indice ml-auto"></div>
-                <div class="ml-2 mr-auto">Ibovespa</div>
-              </div>
+              <v-row>
+                <v-col class="d-flex align-center py-1" cols="5" md="4">
+                  <div style="background-color: #00f1ea" class="rounded-lg color-indice ml-auto"></div>
+                </v-col>
+                <v-col class="py-1">
+                  <div class="text-left">Ibovespa</div>
+                </v-col>
+              </v-row>
             </div>
             <div class="font-weight-bold">
-              <div class="d-flex align-center text-center">
-                <div style="background-color: #b000ff" class="rounded-lg color-indice ml-auto"></div>
-                <div class="ml-2 mr-auto">Bitcoin</div>
-              </div>
+              <v-row>
+                <v-col class="d-flex align-center py-1" cols="5" md="4">
+                  <div style="background-color: #b000ff" class="rounded-lg color-indice ml-auto"></div>
+                </v-col>
+                <v-col class="py-1">
+                  <div class="text-left">Bitcoin</div>
+                </v-col>
+              </v-row>
             </div>
             <div class="font-weight-bold">
-              <div class="d-flex align-center text-center">
-                <div style="background-color: #00ff00" class="rounded-lg color-indice ml-auto"></div>
-                <div class="ml-2 mr-auto">X-GREEN</div>
-              </div>
+              <v-row>
+                <v-col class="d-flex align-center py-1" cols="5" md="4">
+                  <div style="background-color: #00ff00" class="rounded-lg color-indice ml-auto"></div>
+                </v-col>
+                <v-col class="py-1">
+                  <div class="text-left">X-GREEN</div>
+                </v-col>
+              </v-row>
             </div>
           </div>
           <div class="black text-center rounded-lg pa-3 mt-3">
@@ -87,7 +103,7 @@
         dark
         class="desloc_vert"
       >
-        <b>QUERO LUCRAR AGORA</b>
+        <b class="pa-3 title">QUERO LUCRAR AGORA</b>
       </v-btn>
     </div>
   </section>

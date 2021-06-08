@@ -11,7 +11,7 @@
           </div>
           </v-card>
           <v-card color="pink" class="white--text rounded-xl pa-10 mt-3 d-flex align-center h-130px">
-            <h2 class="body-2 text-uppercase text-center font-weight-bold mx-auto">Comece agora</h2>
+            <h2 class="title text-uppercase text-center font-weight-bold mx-auto">Comece agora</h2>
           </v-card>
         </v-col>
         <v-col cols="12" sm="4" md="4" lg="3">
@@ -67,7 +67,8 @@ export default {
   text-align: center;
   width: 100%;
   .text-title{
-    font-size: 40px;
+    text-transform: uppercase;
+    font-size: 35px;
     line-height: 1.2;
     color: #ffff;
     max-width: 550px;

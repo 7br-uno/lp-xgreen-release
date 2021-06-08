@@ -2,15 +2,15 @@
   <section class="wrapper">
     <v-container>
       <v-row>
-        <v-col cols="12" md="6" offset-md="6">
+        <v-col class="text-right text-sm-left" cols="12" md="6" offset-md="6">
           <div class="f-container">
-            <p class="first font-weight-bold">Agora você pode estar pensando: como isso é possível?</p>
-            <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'">Nós temos os melhores especialistas...</h2>
+            <p class="first font-weight-bold">Agora você pode estar pensando:<br>como isso é possível?</p>
+            <h2 :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'">Nós temos<br>os melhores especialistas...</h2>
             <p class="second">Mas não nascemos prontos!</p>
           </div>
-          <p class="white--text pl-md-15">
+          <p class="white--text pl-md-15 ml-auto ml-sm-0 p-subtitle">
             Operamos desde 2015. Fizemos <b>muitos</b> testes, erramos várias vezes,
-            até chegar nesta estratégia <b>sólida e lucrativa</b>
+            até chegar nesta estratégia <b>sólida e lucrativa.</b>
           </p>
         </v-col>
       </v-row>
@@ -60,5 +60,8 @@
       font-size: 20px;
     }
   }
+}
+.p-subtitle{
+  max-width: 255px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="wrapper">
-    <v-container>
+    <v-container class="bg-img">
       <h2 class="mx-auto mb-15">Está na hora de
         <b class="text-green">realizar seus sonhos</b>
         aproveite o valor promocional em até:
@@ -8,7 +8,7 @@
       <client-only>
         <vac class="w-100" :end-time="endTime">
           <v-row
-            class="w-100"
+            class="w-100 px-16 mx-0 px-sm-0 px-md-16 mx-md-16"
             slot="process"
             slot-scope="{ timeObj }"
           >
@@ -82,14 +82,18 @@ export default {
   .wrapper {
     padding: 80px 30px !important;
   }
+  .container-text-button {
+    min-height: calc(25vh + 10rem) !important;
+  }
+}
+.bg-img{
+  background: url('/img/bg_sonhos.jpg') no-repeat center;
+  background-size: contain;
 }
 .wrapper {
-  background: url('/img/bg_sonhos.jpg');
+  background-color: #141414;
   padding: 100px;
   text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
   min-height:  calc(70vh + 2rem);
   h2{
     font-size: 30px;
@@ -103,7 +107,7 @@ export default {
   }
 }
 .container-text-button {
-  min-height: calc(100vh + 10rem);
+  min-height: calc(50vh + 10rem);
   display: flex;
   justify-content: flex-end;
   align-items: center;

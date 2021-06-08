@@ -55,6 +55,7 @@
   .content {
     position: relative;
     max-width: 750px;
+    padding-bottom: 150px;
     p {
       color: #fff;
       font-size: 18px;
@@ -62,7 +63,7 @@
     }
     h2 {
       color: #a7e853;
-      font-size: 60px;
+      font-size: 50px;
       text-transform: uppercase;
       line-height: 1.2;
       filter: drop-shadow(-1px -1px 7px #a7e853);
