@@ -2,7 +2,7 @@
   <section class="wrapper pt-16">
     <h2
       :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'"
-      class="mt-5 mx-auto"
+      class="mt-2 mb-2 mx-auto"
     >
       E mais: Temos o Robozão absurdamente bom!
     </h2>

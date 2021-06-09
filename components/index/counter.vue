@@ -54,6 +54,7 @@
           Não perca mais tempo
         </span>
         <v-btn
+          x-large
           depressed
           class="ml-6 white--text"
           color="#701111"

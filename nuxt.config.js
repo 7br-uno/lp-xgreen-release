@@ -1,13 +1,17 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  server: {
+    port: 80, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
-    title: 'X-GREEN: Faça uma renda extra todos os dias!',
+    title: 'X-GREEN: Curso Método Fast Green®',
     htmlAttrs: {
       lang: 'pt-br'
     },

@@ -92,7 +92,7 @@ export default {
 }
 .wrapper {
   background-color: #141414;
-  padding: 100px;
+  padding: 50px 100px;
   text-align: center;
   min-height:  calc(70vh + 2rem);
   h2{
