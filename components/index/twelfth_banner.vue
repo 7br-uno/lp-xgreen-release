@@ -36,7 +36,7 @@ export default {
         },
         {
           title: "Quais são as formas de pagamento?",
-          description: "Trabalhamos com as seguintes formas de pagamento: Cartão de crédito, Boleto à vista, Conta hotmart e Pay Pal.",
+          description: "Trabalhamos com as seguintes formas de pagamento: Cartão de Crédito,  2 Cartões de Crédito, PIX, Boleto Bancário, Débito Bancário, Cartão de débito virtual Caixa, Conta Hotmart, PayPal, GooglePay e SamsungPay.",
         },
         {
           title: "Preciso entender de futebol?",

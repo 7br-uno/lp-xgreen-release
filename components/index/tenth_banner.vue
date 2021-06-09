@@ -191,8 +191,7 @@
         class="d-flex justify-center mb-10 mt-10 white--text"
         :class="$vuetify.breakpoint.smAndUp ? 'body-1' : 'body-2'"
       >
-        Formas de pagamento: Cartão de crédito, boleto a vista, Paypal, Conta
-        Hotmart e Sansung Pay
+        Formas de pagamento: Cartão de Crédito,  2 Cartões de Crédito, PIX, Boleto Bancário, Débito Bancário, Cartão de débito virtual Caixa, Conta Hotmart, PayPal, GooglePay e SamsungPay
       </div>
       <div class="d-flex justify-center">
         <img src="/img/logos_pagamentos.jpg" alt="" />
