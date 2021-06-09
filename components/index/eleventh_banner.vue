@@ -3,16 +3,25 @@
     <v-container>
       <v-row>
         <v-col cols="12" offset-sm="5" sm="6" class="px-8 px-sm-0">
-          <img class="float-right" src="/img/selo_setedias.png" alt="sete dias">
+          <img height="120" class="float-right" src="/img/selo_setedias.png" alt="sete dias">
           <div class="teste-gratis">
             <h2 :class="$vuetify.breakpoint.smAndUp ? 'display-1' : 'headline'" class="font-weight-bold white--text mb-5">Sua experiência vai ser matadora!!!</h2>
-            <p><b>Teste o nosso produto gratis por sete dias.</b>
+            <p><b>Teste o nosso produto grátis por sete dias.</b>
               Aproveite este periodo e confirme o nosso rendimento e tudo o que estamos afirmando aqui!
             </p>
             <p>Se não quiser continuar, cancelamos a sua inscrição sem qualquer enrolação.</p>
             <p>É só entrar na plataforma de contratação do curso e solicitar o cancelamento.</p>
-
-            <button>Faça o teste grátis por 7 dias</button>
+          </div>
+          <div
+            class="text-center pt-3"
+          >
+            <v-btn
+              dark
+              color="pink"
+              large
+            >
+              Faça o teste grátis por 7 dias
+            </v-btn>
           </div>
         </v-col>
       </v-row>

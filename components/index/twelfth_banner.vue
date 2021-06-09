@@ -1,11 +1,12 @@
 <template>
   <section class="wrapper">
-    <v-container>
+    <v-container class="px-0 px-md-16">
       <h1 class="text-center mb-6">Perguntas frequentes</h1>
       <v-expansion-panels
         multiple
         v-for="(question, i) in questions"
         :key="i"
+        class="px-lg-16"
       >
         <v-expansion-panel class="bg-panel">
           <v-expansion-panel-header class="panel-title"
@@ -62,7 +63,7 @@ export default {
 <style scoped lang="scss">
 .wrapper {
   background: #000000;
-  padding: 80px 20px;
+  padding: 30px 20px;
   display: flex;
   align-items: center;
   justify-content: center;

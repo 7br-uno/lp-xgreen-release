@@ -28,8 +28,8 @@
               class="container-bonus"
               :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
             >
-              <div style="background-color: #00ff00" class="rounded-lg color-indice "></div>
-              <h2>
+              <div style="background-color: #00ff00" class="rounded-lg color-indice mb-2"></div>
+              <h2 class="title lh-125">
                 {{ cardBonus.titulo }}
               </h2>
             </div>
@@ -65,28 +65,28 @@
                   "
                   class="font-weight-medium"
                 >
-                  + acesso à metodologia exclusiva fast green ®
+                  + acesso à metodologia exclusiva fast green<sup class="body-2">&reg;</sup>
                 </div>
               </div>
-              <div class="p-c-green text-lg-h5 text-sm-body-2">
+              <div class="p-c-green pt-1 text-lg-h5 text-sm-body-2 text-uppercase">
                 E você não vai pagar por nenhum deles!
               </div>
             </div>
           </div>
-          <div class="background-pink py-12">
+          <div class="background-pink pb-12 pt-10">
             <div class="c-text-div">
               <div
                 :class="$vuetify.breakpoint.smAndUp ? 'headline' : ''"
                 class="text-lg-h5 text-bp"
               >
-                <span class="text-white">E vamos além,</span> vamos te dar
-                <span class="text-black">R$ 3.000,00</span> de desconto no curso
+                <span class="text-white">E vamos além,</span>
+                <span class="text-black"> vamos te dar R$ 3.000,00<br>de desconto no curso </span>
                 <b class="text-brackground px-2">Até dia 25/04</b>
               </div>
             </div>
           </div>
           <v-btn x-large color="white" class="pink--text btn-pers">
-            <b>+ Adesão zero</b>
+            <span class="title font-weight-black">+ Adesão zero</span>
           </v-btn>
         </div>
       </v-container>
@@ -98,7 +98,7 @@
       >
         Começando hoje, você vai ter:
       </div>
-      <v-row class="d-flex justify-center">
+      <v-row class="d-flex align-center">
         <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
           <div class="c-green">
             <h4>Adesão: R$ 399</h4>
@@ -111,6 +111,7 @@
               </div>
               <div class="c-b-p">
                 <p>00</p>
+                <p class="pl-2">p/mês</p>
               </div>
             </div>
           </div>
@@ -126,7 +127,7 @@
           </div>
         </v-col>
 
-        <v-col cols="12" sm="12" md="6" lg="4" class="ma-auto mb-10 mx-adesao">
+        <v-col cols="12" sm="12" md="6" lg="4" class="ma-auto mb-7 mx-adesao">
           <div class="c-green white">
             <h4>Adesão: R$ 399</h4>
             <img
@@ -143,7 +144,7 @@
               </div>
               <div class="c-b-p">
                 <p class="white--text">00</p>
-                <p>p/mês</p>
+                <p class="pl-2">p/mês</p>
               </div>
             </div>
           </div>
@@ -170,7 +171,7 @@
               </div>
               <div class="c-b-p">
                 <p>00</p>
-                <p>p/mês</p>
+                <p class="pl-2">p/mês</p>
               </div>
             </div>
           </div>
@@ -232,7 +233,7 @@ export default {
         {
           img: "/img/bonus4.jpg",
           titulo: "Consultoria de planejamento financeiro e investimentos Six Capital",
-          precoDe: "R$500",
+          precoDe: "R$5.000",
           precoPor: "R$0.00",
           description:
             "Aprenda com uma das melhores consultorias do mercado",
@@ -301,7 +302,7 @@ export default {
 }
 .wrapper {
   background: #111111;
-  padding: 100px;
+  padding: 40px 100px;
   text-align: center;
 }
 .color-indice{
@@ -333,7 +334,7 @@ export default {
   border-radius: 4px;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 10px;
   h2 {
@@ -529,7 +530,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     :first-child {
       color: #a6ff3f;
@@ -587,5 +588,8 @@ button {
 }
 .verde-escuro{
   background-color: #7fd12d !important;
+}
+.lh-125{
+  line-height: 1.25;
 }
 </style>

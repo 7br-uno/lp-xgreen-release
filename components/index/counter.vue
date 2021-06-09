@@ -50,13 +50,13 @@
         </client-only>
       </v-col>
       <v-col class="d-flex align-center" cols="12" sm="6" md="4">
-        <span>
+        <span class="text-uppercase">
           Não perca mais tempo
         </span>
         <v-btn
           depressed
           class="ml-6 white--text"
-          color="red darken-4"
+          color="#701111"
         >
           Comece agora
         </v-btn>

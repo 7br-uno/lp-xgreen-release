@@ -1,6 +1,6 @@
 <template>
   <section class="wrapper">
-    <h1>Se liga na opinião da galera</h1>
+    <h1 class="text-uppercase">Se liga na opinião da galera</h1>
     <v-carousel height="350" class="d-block d-sm-none" :show-arrows="false" hide-delimiter-background>
       <v-carousel-item v-for="(single, i) in all" :key="i">
         <div class="mt-8">
@@ -12,14 +12,14 @@
       <v-carousel-item>
         <div class="container-chat-3">
           <div v-for="(img1, i) in imgs1" :key="i">
-            <img :src="img1" alt="" class="img-chat" />
+            <img :src="img1" alt="Opinião dos nossos clientes" class="img-chat" />
           </div>
         </div>
       </v-carousel-item>
       <v-carousel-item>
         <div class="container-chat-3">
           <div v-for="(img2, i) in imgs2" :key="i">
-            <img :src="img2" alt="" class="img-chat" />
+            <img :src="img2" alt="Opinião dos nossos clientes" class="img-chat" />
           </div>
         </div>
       </v-carousel-item>
@@ -70,7 +70,7 @@ export default {
 @media (min-width: 992px) {
   .img-chat {
     width: 250px;
-    margin-right: 4px;
+    margin: 0 15px;
   }
 }
 
@@ -83,7 +83,7 @@ export default {
   }
   .img-chat {
     width: 190px;
-    margin-right: 4px;
+    margin: 0 15px;
   }
 }
 </style>

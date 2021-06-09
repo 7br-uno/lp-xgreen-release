@@ -2,7 +2,7 @@
   <section class="wrapper pt-16">
     <h2
       :class="$vuetify.breakpoint.smAndUp ? '' : 'display-1 font-weight-bold'"
-      class="mt-10 mx-auto"
+      class="mt-5 mx-auto"
     >
       E mais: Temos o Robozão absurdamente bom!
     </h2>
@@ -12,7 +12,7 @@
         <v-col cols="12" md="6" lg="4">
           <div class="robozao_strategist mx-auto">
             <div>
-              <img src="/img/icone_robozao_televisao_01.png" alt="" />
+                <img class="img_icon" src="/img/icone_robozao_televisao_01.png" alt="icon" />
               <p>
                 Uma inteligência artificial, apelidada de Robozão, indica as
                 nelhores entradas e jogos da nossa estratégia vencedora desde
@@ -24,7 +24,7 @@
         <v-col cols="12" md="6" lg="4">
           <div class="robozao_strategist mx-auto">
             <div>
-              <img src="/img/icone_robozao_uniao_02.png" alt="" />
+              <img class="img_icon" src="/img/icone_robozao_uniao_02.png" alt="icon" />
               <p>
                 A partir da análise do Robozão, nossa equipe de especialistas
                 avalia as partidas e indica as melhores entradas do mercado para
@@ -36,7 +36,7 @@
         <v-col cols="12" md="12" lg="4">
           <div class="robozao_strategist mx-auto">
             <div>
-              <img src="/img/icone_robozao_bola_03.png" alt="" />
+              <img class="img_icon" src="/img/icone_robozao_bola_03.png" alt="icon" />
               <p>
                 A união dos nossos tipster com o Robozão é o que faz da nossa
                 metodologia única, um sucesso.
@@ -92,5 +92,8 @@
       }
     }
   }
+}
+.img_icon{
+  height: 90px;
 }
 </style>
