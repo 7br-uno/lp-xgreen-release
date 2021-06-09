@@ -29,7 +29,7 @@
               :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
             >
               <div style="background-color: #00ff00" class="rounded-lg color-indice mb-2"></div>
-              <h2 class="title lh-125">
+              <h2 v-html="cardBonus.titulo" class="title lh-125">
                 {{ cardBonus.titulo }}
               </h2>
             </div>
@@ -40,7 +40,7 @@
                 {{ cardBonus.precoPor }}
               </span>
             </div>
-            <p class="p-desc">
+            <p v-html="cardBonus.description" class="p-desc">
               {{ cardBonus.description }}
             </p>
           </div>
@@ -179,15 +179,15 @@ export default {
       cardsBonus: [
         {
           img: "/img/bonus1.jpg",
-          titulo: "Acesso à metodologia X-Green",
+          titulo: "Acesso à metodologia <nobr>X-Green</nobr>",
           precoDe: "Imensurável!",
           precoPor: "R$0.00",
           description:
-            "Conheça detalhadamente a estratégia vencedora da X-Green",
+            "Conheça detalhadamente a estratégia vencedora da <nobr>X-Green</nobr>",
         },
         {
           img: "/img/bonus2.jpg",
-          titulo: "Acesso ao Grupo Vip Telegram X-Green",
+          titulo: "Acesso ao Grupo Vip Telegram <nobr>X-Green</nobr>",
           precoDe: "R$300",
           precoPor: "R$0.00",
           description:
@@ -195,7 +195,7 @@ export default {
         },
         {
           img: "/img/bonus3.jpg",
-          titulo: "Acesso às planilhas vencedoras X-Green",
+          titulo: "Acesso às planilhas vencedoras <nobr>X-Green</nobr>",
           precoDe: "R$200",
           precoPor: "R$0.00",
           description:

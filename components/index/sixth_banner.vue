@@ -131,7 +131,7 @@
         dark
         class="desloc_vert"
       >
-        <b class="pa-3 title">QUERO LUCRAR AGORA</b>
+        <b style="font-weight: 700" class="pa-3 title">QUERO LUCRAR AGORA</b>
       </v-btn>
     </div>
   </section>
