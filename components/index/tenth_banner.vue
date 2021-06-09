@@ -98,8 +98,8 @@
       >
         Começando hoje, você vai ter:
       </div>
-      <v-row class="d-flex align-center">
-        <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
+      <v-row style="max-width: 700px" class="d-flex align-center mx-auto">
+        <v-col cols="12" sm="12" md="6" class="c-adesao ma-auto mb-10">
           <div class="c-green">
             <h4>Adesão: R$ 399</h4>
           </div>
@@ -126,8 +126,7 @@
             <button>Quero começar</button>
           </div>
         </v-col>
-
-        <v-col cols="12" sm="12" md="6" lg="4" class="ma-auto mb-7 mx-adesao">
+        <v-col cols="12" sm="12" md="6" class="ma-auto mb-7 mx-adesao">
           <div class="c-green white">
             <h4>Adesão: R$ 399</h4>
             <img
@@ -157,33 +156,6 @@
             </ul>
 
             <button class="pink white--text">Quero começar</button>
-          </div>
-        </v-col>
-        <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
-          <div class="c-green active">
-            <h4>Adesão: R$ 399</h4>
-          </div>
-          <div class="c-grey">
-            <h2 class="h2-mensal">Semestral</h2>
-            <div class="c-border">
-              <div class="c-b-h1">
-                <h1 class="h1-green">199,</h1>
-              </div>
-              <div class="c-b-p">
-                <p>00</p>
-                <p class="pl-2">p/mês</p>
-              </div>
-            </div>
-          </div>
-          <div class="c-list-desc">
-            <ul class="desc-card">
-              <li v-for="(listItem1, i) in listItems1" :key="i">
-                <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
-                {{ listItem1.desc }}
-              </li>
-            </ul>
-
-            <button>Quero começar</button>
           </div>
         </v-col>
       </v-row>

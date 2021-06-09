@@ -10,8 +10,15 @@
               <p class="subtitle-1 text-uppercase text-left mb-0">Do basico ao avançado:</p>
           </div>
           </v-card>
-          <v-card color="pink" class="white--text rounded-xl pa-10 mt-3 d-flex align-center h-130px">
-            <h2 class="title text-uppercase text-center font-weight-bold mx-auto">Comece agora</h2>
+          <v-card color="transparent" elevation="0" class="white--text rounded-xl mt-3 d-flex align-center h-130px">
+            <v-btn
+              x-large
+              color="pink"
+              dark
+              class="mx-auto rounded-xl"
+            >
+              <h2 class="title font-weight-bold">Comece agora</h2>
+            </v-btn>
           </v-card>
         </v-col>
         <v-col cols="12" sm="4" md="4" lg="3">
