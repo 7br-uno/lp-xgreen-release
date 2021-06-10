@@ -1,4 +1,6 @@
-# lp-xgreen-release
+# Landing Page de lançamento X-GREEN
+
+![Landing Page de lançamento X-GREEN](https://i.imgur.com/7c63sU2.jpg)
 
 ## Build Setup
 
