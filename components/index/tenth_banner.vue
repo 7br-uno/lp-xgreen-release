@@ -29,7 +29,7 @@
               :style="`background: url(${cardBonus.img}); background-size: cover; background-position: center`"
             >
               <div style="background-color: #00ff00" class="rounded-lg color-indice mb-2"></div>
-              <h2 class="title lh-125">
+              <h2 v-html="cardBonus.titulo" class="title lh-125">
                 {{ cardBonus.titulo }}
               </h2>
             </div>
@@ -40,7 +40,7 @@
                 {{ cardBonus.precoPor }}
               </span>
             </div>
-            <p class="p-desc">
+            <p v-html="cardBonus.description" class="p-desc">
               {{ cardBonus.description }}
             </p>
           </div>
@@ -98,8 +98,8 @@
       >
         Começando hoje, você vai ter:
       </div>
-      <v-row class="d-flex align-center">
-        <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
+      <v-row style="max-width: 700px" class="d-flex align-center mx-auto">
+        <v-col cols="12" sm="12" md="6" class="c-adesao ma-auto mb-10">
           <div class="c-green">
             <h4>Adesão: R$ 399</h4>
           </div>
@@ -126,8 +126,7 @@
             <button>Quero começar</button>
           </div>
         </v-col>
-
-        <v-col cols="12" sm="12" md="6" lg="4" class="ma-auto mb-7 mx-adesao">
+        <v-col cols="12" sm="12" md="6" class="ma-auto mb-7 mx-adesao">
           <div class="c-green white">
             <h4>Adesão: R$ 399</h4>
             <img
@@ -159,33 +158,6 @@
             <button class="pink white--text">Quero começar</button>
           </div>
         </v-col>
-        <v-col cols="12" sm="12" md="6" lg="4" class="c-adesao ma-auto mb-10">
-          <div class="c-green active">
-            <h4>Adesão: R$ 399</h4>
-          </div>
-          <div class="c-grey">
-            <h2 class="h2-mensal">Semestral</h2>
-            <div class="c-border">
-              <div class="c-b-h1">
-                <h1 class="h1-green">199,</h1>
-              </div>
-              <div class="c-b-p">
-                <p>00</p>
-                <p class="pl-2">p/mês</p>
-              </div>
-            </div>
-          </div>
-          <div class="c-list-desc">
-            <ul class="desc-card">
-              <li v-for="(listItem1, i) in listItems1" :key="i">
-                <v-icon small color="grey darken-2"> mdi-check-bold </v-icon>
-                {{ listItem1.desc }}
-              </li>
-            </ul>
-
-            <button>Quero começar</button>
-          </div>
-        </v-col>
       </v-row>
       <div
         class="d-flex justify-center mb-10 mt-10 white--text"
@@ -207,15 +179,15 @@ export default {
       cardsBonus: [
         {
           img: "/img/bonus1.jpg",
-          titulo: "Acesso à metodologia X-Green",
+          titulo: "Acesso à metodologia <nobr>X-Green</nobr>",
           precoDe: "Imensurável!",
           precoPor: "R$0.00",
           description:
-            "Conheça detalhadamente a estratégia vencedora da X-Green",
+            "Conheça detalhadamente a estratégia vencedora da <nobr>X-Green</nobr>",
         },
         {
           img: "/img/bonus2.jpg",
-          titulo: "Acesso ao Grupo Vip Telegram X-Green",
+          titulo: "Acesso ao Grupo Vip Telegram <nobr>X-Green</nobr>",
           precoDe: "R$300",
           precoPor: "R$0.00",
           description:
@@ -223,7 +195,7 @@ export default {
         },
         {
           img: "/img/bonus3.jpg",
-          titulo: "Acesso às planilhas vencedoras X-Green",
+          titulo: "Acesso às planilhas vencedoras <nobr>X-Green</nobr>",
           precoDe: "R$200",
           precoPor: "R$0.00",
           description:

@@ -63,17 +63,45 @@
             <div class="font-weight-bold">
               Rendimento anual X-GREEN
             </div>
-            <div class="font-weight-bold ml-4">
-              2018 <span class="yellow--text ml-2">+ 506%*</span>
+            <div class="font-weight-bold mt-3">
+              <v-row>
+                <v-col class="text-right px-1 py-1" cols="6" sm="5">
+                  2018
+                </v-col>
+                <v-col class="yellow--text text-left px-1 py-1">
+                  + 506%*
+                </v-col>
+              </v-row>
             </div>
-            <div class="font-weight-bold ml-4">
-              2019 <span class="yellow--text ml-2">+ 808%</span>
+            <div class="font-weight-bold">
+              <v-row>
+                <v-col class="text-right px-1 py-1" cols="6" sm="5">
+                  2019
+                </v-col>
+                <v-col class="yellow--text text-left px-1 py-1">
+                  + 808%
+                </v-col>
+              </v-row>
             </div>
-            <div class="font-weight-bold ml-4">
-              2020 <span class="yellow--text ml-2">+ 936%</span>
+            <div class="font-weight-bold">
+              <v-row>
+                <v-col class="text-right px-1 py-1" cols="6" sm="5">
+                  2020
+                </v-col>
+                <v-col class="yellow--text text-left px-1 py-1">
+                  + 936%
+                </v-col>
+              </v-row>
             </div>
-            <div class="font-weight-bold ml-4">
-              2021 <span class="blue--text darken-1 ml-2">+ 276%**</span>
+            <div class="font-weight-bold mb-3">
+              <v-row>
+                <v-col class="text-right px-1 py-1" cols="6" sm="5">
+                  2021
+                </v-col>
+                <v-col class="blue--text text-left px-1 py-1">
+                  + 275%**
+                </v-col>
+              </v-row>
             </div>
             <div class="caption text-left px-3 mt-1">Estratégia arrojada</div>
           </div>
@@ -91,7 +119,7 @@
           <line-chart :chart-data="datacollection" :options="chartOptions" class="graph mx-auto my-0 my-md-10"></line-chart>
         </v-col>
       </v-row>
-      <div v-if="!$vuetify.breakpoint.mdAndUp" style="height: 445px"></div>
+      <div v-if="!$vuetify.breakpoint.mdAndUp" style="height: 420px"></div>
       <div class="text-center white--text font-weight-bold headline mb-15 pt-10 text-uppercase">
         Lembre-se: Você vai poder copiar a nossa estratégia e lucrar mais
       </div>
@@ -103,7 +131,7 @@
         dark
         class="desloc_vert"
       >
-        <b class="pa-3 title">QUERO LUCRAR AGORA</b>
+        <b style="font-weight: 700" class="pa-3 title">QUERO LUCRAR AGORA</b>
       </v-btn>
     </div>
   </section>
@@ -133,7 +161,7 @@ export default {
   methods: {
     fillData () {
       this.datacollection = {
-        labels: ['', '2018', '2019', '2020', '2021'],
+        labels: ['2018', '2019', '2020', '2021'],
         datasets: [
           {
             label: 'X-GREEN',
@@ -141,7 +169,7 @@ export default {
             fill: false,
             borderColor: '#00ff00',
             borderWidth: 6,
-            data: [2, 60, 80, 100, 60]
+            data: [505.87, 808.5, 936.25, 276]
           },
           {
             label: 'Bitcoin',
@@ -149,7 +177,7 @@ export default {
             fill: false,
             borderColor: '#b000ff',
             borderWidth: 5,
-            data: [1, 30, 45, 44, 30],
+            data: [70, 96, 415.32, 111],
           },
           {
             label: 'Ibovespa',
@@ -157,7 +185,7 @@ export default {
             fill: false,
             borderColor: '#00f1ea',
             borderWidth: 5,
-            data: [0, 25, 30, 15, 9],
+            data: [15.3, 31.58, 2.9, 1.69],
           },
           {
             label: 'Poupança',
@@ -165,7 +193,7 @@ export default {
             fill: false,
             borderColor: '#ff8600',
             borderWidth: 5,
-            data: [0, 15, 13, 14, 10],
+            data: [4.62, 4.26, 2.11, 0.36],
           },
         ]
       }

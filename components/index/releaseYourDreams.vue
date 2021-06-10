@@ -6,9 +6,10 @@
         aproveite o valor promocional em até:
       </h2>
       <client-only>
-        <vac class="w-100" :end-time="endTime">
+        <vac class="d-flex align-center" :end-time="endTime">
           <v-row
-            class="w-100 px-16 mx-0 px-sm-0 px-md-16 mx-md-16"
+            style="max-width: 475px"
+            class="mx-auto px-9 px-sm-0"
             slot="process"
             slot-scope="{ timeObj }"
           >

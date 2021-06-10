@@ -20,7 +20,7 @@
               color="pink"
               large
             >
-              Faça o teste grátis por 7 dias
+              <span style="font-weight: 700">Faça o teste grátis por 7 dias</span>
             </v-btn>
           </div>
         </v-col>

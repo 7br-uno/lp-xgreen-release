@@ -59,7 +59,7 @@
           class="ml-6 white--text"
           color="#701111"
         >
-          Comece agora
+          <span style="font-weight: 700">Comece agora</span>
         </v-btn>
       </v-col>
     </v-row>

@@ -1,14 +1,14 @@
 <template>
   <section class="wrapper">
     <h1 class="text-uppercase display-1 font-weight-bold">Se liga na opinião da galera</h1>
-    <v-carousel height="350" class="d-block d-sm-none" :show-arrows="false" hide-delimiter-background>
+    <v-carousel height="330" class="d-block d-sm-none" :show-arrows="false" hide-delimiter-background>
       <v-carousel-item v-for="(single, i) in all" :key="i">
         <div class="mt-8">
           <img :src="single" alt="" class="img-chat" />
         </div>
       </v-carousel-item>
     </v-carousel>
-    <v-carousel class="d-none d-sm-block" :show-arrows="false" cycle hide-delimiter-background>
+    <v-carousel height="400" class="d-none d-sm-block" :show-arrows="false" cycle hide-delimiter-background>
       <v-carousel-item>
         <div class="container-chat-3">
           <div v-for="(img1, i) in imgs1" :key="i">
@@ -60,7 +60,7 @@ export default {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 25px;
   margin: 0 auto;
 }
 .img-chat {
