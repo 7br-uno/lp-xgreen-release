@@ -194,7 +194,7 @@
         Formas de pagamento: Cartão de Crédito,  2 Cartões de Crédito, PIX, Boleto Bancário, Débito Bancário, Cartão de débito virtual Caixa, Conta Hotmart, PayPal, GooglePay e SamsungPay
       </div>
       <div class="d-flex justify-center">
-        <img src="/img/logos_pagamentos.jpg" alt="" />
+        <img src="/img/logos_pagamentos.png" width="390" alt="Formas de pagamento" />
       </div>
     </v-container>
   </section>

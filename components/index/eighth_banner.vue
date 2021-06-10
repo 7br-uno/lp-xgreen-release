@@ -55,7 +55,10 @@
   }
 }
 .wrapper {
-  background: #191919;
+  background-color: #191919;
+  background-image: url('/img/bg_ronaldo.jpg');
+  background-position: right;
+  background-size: cover;
   padding: 50px;
   text-align: center;
   h2 {
